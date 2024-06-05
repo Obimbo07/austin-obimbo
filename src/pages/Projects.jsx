@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-const projects = [
+export const projects = [
     {
       index: 0,
       name: 'Book Destination',
@@ -85,7 +85,7 @@ const projects = [
     // Add more project objects as needed
 ];
 
-const ProjectCard = ({ project }) => {
+export const ProjectCard = ({ project }) => {
     const [showModal, setShowModal] = useState(false);
   
     const handleOpenModal = () => setShowModal(true);
