@@ -6,7 +6,7 @@ import "../css/hero.css";
 
 const slidesData = [
   {
-    backgroundImage: "vision.jpg",
+    className: "slide-1", // Use class names instead of backgroundImage
     heading: "Hey there, I am Austin Obimbo",
     texts: [
       "Certified Software Engineer",
@@ -16,7 +16,7 @@ const slidesData = [
     ],
   },
   {
-    backgroundImage: "IMG_3892.jpg",
+    className: "slide-1",
     heading: "Welcome to My Portfolio",
     texts: [
       "Experienced in Various Technologies",
@@ -26,7 +26,7 @@ const slidesData = [
     ],
   },
   {
-    backgroundImage: "IMG_3892.jpg",
+    className: "slide-2",
     heading: "Welcome to My Portfolio",
     texts: [
       "Experienced in Various Technologies",
@@ -36,7 +36,7 @@ const slidesData = [
     ],
   },
   {
-    backgroundImage: "IMG_3892.jpg",
+    className: "slide-2",
     heading: "Welcome to My Portfolio",
     texts: [
       "Experienced in Various Technologies",
@@ -46,7 +46,7 @@ const slidesData = [
     ],
   },
   {
-    backgroundImage: "IMG_3892.jpg",
+    className: "slide-2",
     heading: "Welcome to My Portfolio",
     texts: [
       "Experienced in Various Technologies",
@@ -96,7 +96,10 @@ const Hero = () => {
   return (
     <Slider className="hero-slider-container" {...settings}>
       {slidesData.map((slide, index) => (
-        <div key={index} className="hero-slide" style={{ backgroundImage: `url(${slide.backgroundImage})` }}>
+        <div
+          key={index}
+          className={`hero-slide ${slide.className}`} // Apply class names for background images
+        >
           <div className="hero-content">
             <h2 className="hero-heading">{slide.heading}</h2>
             <div>
