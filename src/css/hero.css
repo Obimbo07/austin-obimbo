@@ -1,0 +1,90 @@
+.hero-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  background: rgba(171, 8, 8, 0.5);
+  padding: 16px;
+  position: relative;
+  top: 20%;
+}
+
+.hero-heading {
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.hero-text {
+  color: white;
+  text-align: center;
+  margin-bottom: 8px;
+  font-size: 1.125rem;
+}
+
+/* Specific classes for each slide */
+.slide-1 {
+  background-image: url('/vision.jpg');
+}
+
+.slide-2 {
+  background-image: url('/IMG_3892.jpg');
+}
+
+@media (min-width: 640px) {
+  .hero-content {
+    padding: 32px;
+  }
+
+  .hero-heading {
+    font-size: 2.5rem;
+  }
+
+  .hero-text {
+    font-size: 1.25rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .hero-content {
+    padding: 64px;
+  }
+
+  .hero-heading {
+    font-size: 3rem;
+  }
+
+  .hero-text {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero-content {
+    padding: 10%;
+    position: relative;
+    width: fit-content;
+    top: 20%;
+
+  }
+
+  .hero-heading {
+    font-size: 3.5rem;
+  }
+
+  .hero-text {
+    font-size: 1.75rem;
+  }
+}

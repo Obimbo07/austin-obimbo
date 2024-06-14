@@ -1,29 +1,117 @@
-import React from 'react';
-// Import Swiper React components
-import { Swiper, SwiperSlide } from 'swiper/react';
+import React from "react";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import "../css/hero.css";
 
-// Import Swiper styles
-import 'swiper/css/navigation';
-// import required modules
-import { Navigation } from 'swiper/modules';
+const slidesData = [
+  {
+    className: "slide-1", // Use class names instead of backgroundImage
+    heading: "Hey there, I am Austin Obimbo",
+    texts: [
+      "Certified Software Engineer",
+      "Vetted Data Operations Analyst",
+      "IoT Devices Software Architecture Manager",
+      "Cloud Developer & DevOps Engineer",
+    ],
+  },
+  {
+    className: "slide-1",
+    heading: "Welcome to My Portfolio",
+    texts: [
+      "Experienced in Various Technologies",
+      "Passionate About Innovation",
+      "Dedicated to Excellence",
+      "Let's Build the Future Together",
+    ],
+  },
+  {
+    className: "slide-2",
+    heading: "Welcome to My Portfolio",
+    texts: [
+      "Experienced in Various Technologies",
+      "Passionate About Innovation",
+      "Dedicated to Excellence",
+      "Let's Build the Future Together",
+    ],
+  },
+  {
+    className: "slide-2",
+    heading: "Welcome to My Portfolio",
+    texts: [
+      "Experienced in Various Technologies",
+      "Passionate About Innovation",
+      "Dedicated to Excellence",
+      "Let's Build the Future Together",
+    ],
+  },
+  {
+    className: "slide-2",
+    heading: "Welcome to My Portfolio",
+    texts: [
+      "Experienced in Various Technologies",
+      "Passionate About Innovation",
+      "Dedicated to Excellence",
+      "Let's Build the Future Together",
+    ],
+  },
+];
 
 const Hero = () => {
+  var settings = {
+    dots: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplaySpeed: 2000,
+    autoplay: true,
+    initialSlide: 0,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  };
+
   return (
-      <Swiper navigation={true} modules={[Navigation]} className="mySwiper w-full h-screen">
-        <SwiperSlide className="flex flex-col items-center justify-center bg-cover bg-center" style={{ backgroundImage: "url('vision.jpg')" }}>
-        <div className=" flex flex-col justify-center h-screen bg-grey px-4 pb-10 pt-20 md:px-10 md:pb-20 md:pt-24 shadow-lg shadow-gray-500 shadow-inner bg-black bg-opacity-50">
-          <h2 className="text-3xl font-bold text-white mb-4 md:text-4xl">Hey there, I am Austin Obimbo</h2>
-          <div className="text-white space-y-2">
-            <h3 className="text-xl font-semibold md:text-2xl">Certified Software Engineer</h3>
-            <h3 className="text-xl font-semibold md:text-2xl">Vetted Data Operations Analyst</h3>
-            <h3 className="text-xl font-semibold md:text-2xl">IoT Devices Software Architecture Manager</h3>
-            <h3 className="text-xl font-semibold md:text-2xl">Cloud Developer & DevOps Engineer</h3>
+    <Slider className="hero-slider-container" {...settings}>
+      {slidesData.map((slide, index) => (
+        <div
+          key={index}
+          className={`hero-slide ${slide.className}`} // Apply class names for background images
+        >
+          <div className="hero-content">
+            <h2 className="hero-heading">{slide.heading}</h2>
+            <div>
+              {slide.texts.map((text, idx) => (
+                <h3 key={idx} className="hero-text">{text}</h3>
+              ))}
+            </div>
           </div>
         </div>
-      </SwiperSlide>
-      </Swiper>
+      ))}
+    </Slider>
   );
 }
 
 export default Hero;
-
