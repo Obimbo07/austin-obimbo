@@ -2,6 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+
+.navigation-bar {
+  position: absolute;
+}
+
+@media(min-width: 1024px) {
+  .navigation-content {
+    padding: 25px;
+    
+  }
+}
 /*
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;

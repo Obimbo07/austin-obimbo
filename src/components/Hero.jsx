@@ -11,8 +11,7 @@ const slidesData = [
     texts: [
       "Certified Software Engineer",
       "Vetted Data Operations Analyst",
-      "IoT Devices Software Architecture Manager",
-      "Cloud Developer & DevOps Engineer",
+      "IoT Software Architect",
     ],
   },
   {
@@ -27,35 +26,36 @@ const slidesData = [
   },
   {
     className: "slide-2",
-    heading: "Welcome to My Portfolio",
+    heading: "Collaborator and Team Builder",
     texts: [
-      "Experienced in Various Technologies",
-      "Passionate About Innovation",
-      "Dedicated to Excellence",
-      "Let's Build the Future Together",
+      "A remote pair programmer",
+      "Proactive Team Leader",
+      "Focus on Product Quality over Team Quantity",
+      "I Bring a Sparkling Light to Teams",
     ],
   },
   {
     className: "slide-2",
-    heading: "Welcome to My Portfolio",
+    heading: "Agile Software Engineer",
     texts: [
-      "Experienced in Various Technologies",
-      "Passionate About Innovation",
-      "Dedicated to Excellence",
-      "Let's Build the Future Together",
+      "A Natural Sense of Attention to Detail",
+      "Integrates Understanding of IoT Devices",
+      "Expert in Agile Methodologies",
+      "Let's Innovate Together",
     ],
   },
   {
     className: "slide-2",
-    heading: "Welcome to My Portfolio",
+    heading: "Data Driven",
     texts: [
-      "Experienced in Various Technologies",
-      "Passionate About Innovation",
-      "Dedicated to Excellence",
-      "Let's Build the Future Together",
+      "Experienced in Data Analysis and Interpretation",
+      "Passionate About Leveraging Data for Insights",
+      "Committed to Data-Driven Decision Making",
+      "Let's Harness the Power of Data Together",
     ],
   },
 ];
+
 
 const Hero = () => {
   var settings = {
@@ -63,7 +63,7 @@ const Hero = () => {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 100000,
     autoplay: true,
     initialSlide: 0,
     responsive: [
