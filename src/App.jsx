@@ -8,7 +8,7 @@ import Projects from './pages/Projects';
 const App = () => {
   return (
     <div>
-      <Navbar className="relative bottom-0" />
+      <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
