@@ -51,7 +51,7 @@ const Project = () => {
   return (
     <section className="container mx-auto px-4 py-8 bg-gradient-to-r from-blue-500 to-green-500">
       <div className='p-10 mx-auto'>
-        <h2 className="text-3xl font-bold text-white mb-4">My Recent Projects</h2>
+        <h2 className="text-3xl font-bold text-white text-center mb-4">My Recent Projects</h2>
         <hr className="border-t border-white" />
         <Slider {...settings}>
           {recentProjects.map((project) => (
@@ -62,7 +62,7 @@ const Project = () => {
         </Slider>
       </div>
       <div className='p-10 mx-auto'>
-        <h2 className="text-3xl font-bold text-white mb-4">My Projects</h2>
+        <h2 className="text-3xl font-bold text-white mb-4 text-center">My Projects</h2>
         <hr className="border-t border-white" />
         <Slider {...settings}>
           {otherProjects.map((project) => (
