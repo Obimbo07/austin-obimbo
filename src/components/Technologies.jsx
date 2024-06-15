@@ -42,9 +42,29 @@ const Technologies = () => {
               className="w-20 h-20 rounded-full bg-red-200 p-2 shadow-lg transform hover:scale-110 transition-transform duration-300"
             />
             <img
+              src="download.png"
+              alt="React-logo"
+              className="w-20 h-20 rounded-full bg-gray-200 p-2 shadow-lg transform hover:scale-110 transition-transform duration-300"
+            />
+            <img
               src="ruby.png"
               alt="Ruby"
               className="w-20 h-20 rounded-full bg-sky-200 p-2 shadow-lg transform hover:scale-110 transition-transform duration-300"
+            />
+            <img
+              src="rails.png"
+              alt="Ruby-on-rails-logo-png"
+              className="w-20 h-20 rounded-full bg-gray-200 p-2 shadow-lg transform hover:scale-110 transition-transform duration-300"
+            />
+            <img
+              src="redux.png"
+              alt="redux-logo-png"
+              className="w-20 h-20 rounded-full bg-gray-200 p-2 shadow-lg transform hover:scale-110 transition-transform duration-300"
+            />
+            <img
+              src="rspec.png"
+              alt="Ruby-on-rails-logo-png"
+              className="w-20 h-20 rounded-full bg-gray-200 p-2 shadow-lg transform hover:scale-110 transition-transform duration-300"
             />
             {/* Add more framework & language icons here */}
           </div>
