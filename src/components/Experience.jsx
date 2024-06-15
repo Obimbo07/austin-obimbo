@@ -2,10 +2,10 @@ import React from 'react';
 
 const experience = [
   {
-    index: 0,
+    index: 1,
     workTitle: 'Self Employed',
     workLocation: 'Remote',
-    description: 'Work on 20+ projects',
+    description: 'Work on 30+ projects',
     date: 'Feb 14th 2023 - Present',
   },
 ];
@@ -21,19 +21,23 @@ const achievements = [
 
 const Experience = () => {
   return (
-    <section className="experience-section">
-      <div className="container flex md:flex-row gap-10 mx-auto">
-        <div className="description-section flex md:flex-col justify-content-center align-center w-full md:w-1/2">
-          <h2 className="text-3xl font-bold text-blue-700 p-4">Work History</h2>
-          <p className="text-sm text-gray-600 mb-2 text-wrap">With a diverse experience I am able to work and manage various challenges engineered by software.</p>
-          <button className="bg-blue-700 p-2">Contact Me</button>
-          <h3>Achievements</h3>
-          <div className="timeline overflow-y-auto h-96"> {/* Added overflow-y-auto and height for scrolling */}
-            <ul className="timeline list-none pl-0"> {/* Changed to unordered list with Tailwind classes */}
+    <section className="experience-section p-4 m-4">
+      <div className="container mx-auto flex flex-col md:flex-row gap-10">
+        <div className="description-section flex flex-col justify-center w-full md:w-1/2 mb-4 md:mb-0 animate-slide-in-left">
+          <h2 className="text-3xl font-bold text-blue-700 mb-4">Work History</h2>
+          <p className="text-sm text-gray-600 mb-4">
+            With a diverse experience I am able to work and manage various challenges engineered by software.
+          </p>
+          <button className="bg-blue-700 text-white p-2 rounded mb-4 hover:bg-blue-800 transition duration-300">
+            Contact Me
+          </button>
+          <h3 className="text-2xl font-semibold text-blue-700 mb-4">Achievements</h3>
+          <div className="timeline overflow-y-auto pr-4">
+            <ul className="list-none pl-0">
               {achievements.map((achievement) => (
-                <li key={achievement.index} className="timeline-item flex items-center mb-8">
+                <li key={achievement.index} className="timeline-item flex items-start mb-8">
+                  <div className="timeline-marker bg-blue-500 h-4 w-4 rounded-full mr-4 mt-1"></div>
                   <div className="timeline-content w-full">
-                    <div className="timeline-marker bg-blue-500 h-4 w-4 rounded-full mr-4"></div>
                     <p className="timeline-date text-gray-500">{achievement.date}</p>
                     <h4 className="timeline-title text-lg font-bold">{achievement.title}</h4>
                     <p className="timeline-description text-gray-700">{achievement.description}</p>
@@ -43,13 +47,16 @@ const Experience = () => {
             </ul>
           </div>
         </div>
-        <div className="experience-list flex flex-col justify-content-center w-full md:w-1/2">
+        <h3 className="text-2xl font-semibold text-blue-700 mb-4 text-center">Work Experience</h3>
+
+        <div className="experience-list flex flex-col justify-center w-full md:w-1/2 animate-slide-in-left">
           {experience.map((exp) => (
-            <div className="experience-item p-10 rounded-lg border" key={exp.index}>
-              <div className="flex flex-row">
-                <h3 className="text-3xl font-bold text-black-700 p-4">{exp.workTitle}</h3>
-                <h3 className="text-3xl font-bold text-black-700 p-4">{exp.date}</h3> {/* Added date for experience */}
+            <div className="experience-item p-4 rounded-lg border mb-4" key={exp.index}>
+              <div className="flex flex-col md:flex-row md:justify-between items-start md:items-center">
+                <h3 className="text-2xl font-bold text-gray-800 mb-2 md:mb-0">{exp.workTitle}</h3>
+                <span className="text-gray-600">{exp.date}</span>
               </div>
+              <p className="text-gray-700 mt-2">{exp.description}</p>
             </div>
           ))}
         </div>
