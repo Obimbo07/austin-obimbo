@@ -4,9 +4,9 @@ import { projects } from '../pages/Projects';
 import { ProjectCard } from '../pages/Projects';
 
 const Project = () => {
-//   if (!projects || projects.length === 0) {
-//     return <p>No projects available.</p>;
-//   }
+  if (!projects || projects.length === 0) {
+    return <p>No projects available.</p>;
+  }
 
   return (
     <><section className="container mx-auto px-4 py-8">
