@@ -21,7 +21,7 @@ const achievements = [
 
 const Experience = () => {
   return (
-    <section className="experience-section p-4">
+    <section className="experience-section p-4 m-4">
       <div className="container mx-auto flex flex-col md:flex-row gap-10">
         <div className="description-section flex flex-col justify-center w-full md:w-1/2 mb-4 md:mb-0 animate-slide-in-left">
           <h2 className="text-3xl font-bold text-blue-700 mb-4">Work History</h2>
@@ -47,7 +47,7 @@ const Experience = () => {
             </ul>
           </div>
         </div>
-        <h3 className="text-2xl font-semibold text-blue-700 mb-4">Work Experience</h3>
+        <h3 className="text-2xl font-semibold text-blue-700 mb-4 text-center">Work Experience</h3>
 
         <div className="experience-list flex flex-col justify-center w-full md:w-1/2 animate-slide-in-left">
           {experience.map((exp) => (
