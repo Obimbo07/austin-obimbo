@@ -22,10 +22,10 @@ const articles = [
 const Blog = () => {
   return (
     <section className="container mx-auto px-4 py-16">
-      <h2>Blog Posts</h2>
-      <div className="grid gap-8">
+      <h2 className="font-bold text-center text-blue-500 text-3xl p-4">Blog Posts</h2>
+      <div className="flex flex-wrap gap-32 justify-center">
         {articles.map((article) => (
-          <article key={article.id} className="shadow-md rounded-lg overflow-hidden">
+          <article key={article.id} className="shadow-md rounded-lg overflow-hidden md:w-1/3">
             <img src={article.image} alt={article.name} className="w-full h-48 object-cover" />
             <div className="px-6 py-4">
               <h3>{article.name}</h3>
