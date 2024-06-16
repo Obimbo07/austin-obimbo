@@ -2,6 +2,8 @@ import React from 'react';
 
 const Professional = () => {
   return (
+    <>    
+    <h1 className="text-center text-3xl text-blue-700 font-bold m-4">Professional Summary</h1>
     <div className='flex flex-col md:flex-row justify-center p-4'>
       <div className='md:w-1/3 w-full h-auto mb-4 md:mb-0'>
         <img
@@ -54,6 +56,7 @@ const Professional = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 
