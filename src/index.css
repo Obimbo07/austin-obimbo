@@ -7,10 +7,13 @@
   position: absolute;
 }
 
+.navigation-content {
+  background: linear-gradient(to right, #4e54c8, #8f94fb);
+}
+
 @media(min-width: 1024px) {
   .navigation-content {
     padding: 25px;
-    
   }
 }
 /*

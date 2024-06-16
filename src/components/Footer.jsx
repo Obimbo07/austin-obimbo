@@ -5,104 +5,89 @@ import { faFacebook, faTwitter, faLinkedin } from '@fortawesome/free-brands-svg-
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-800 text-white py-16 px-8">
-      <div className="container mx-auto flex flex-wrap justify-between">
+    <footer className="bg-gray-900 text-white py-16 px-8">
+      <h1 className='text-center font-bold text-3xl font-'>Contact Section</h1>
+      <div className="flex m-10">
         {/* Contact Form Section */}
-        <div className="w-full md:w-1/2 mb-8 md:mb-0">
-          <h3 className="text-xl font-bold mb-4">Get In Touch</h3>
-          <p className="text-gray-400">
-            I'm always interested in hearing about new projects, so if you'd like
-            to chat, please get in touch.
-          </p>
-          <form action="#" method="POST" className="mt-6">
-            <div className="flex flex-wrap -mx-3 mb-6">
-              <div className="w-full px-3">
-                <input
-                  type="text"
-                  name="name"
-                  placeholder="Your Name"
-                  className="w-full rounded-md border border-gray-700 bg-gray-900 px-4 py-2 text-white focus:border-blue-500 focus:outline-none"
-                  required
-                />
-              </div>
-              <div className="w-full px-3 mt-2">
-                <input
-                  type="email"
-                  name="email"
-                  placeholder="Your Email"
-                  className="w-full rounded-md border border-gray-700 bg-gray-900 px-4 py-2 text-white focus:border-blue-500 focus:outline-none"
-                  required
-                />
-              </div>
-            </div>
-            <div className="w-full px-3">
-              <textarea
-                name="message"
-                placeholder="Your Message"
-                className="w-full rounded-md h-24 border border-gray-700 bg-gray-900 px-4 py-2 text-white focus:border-blue-500 focus:outline-none"
-                required
-              ></textarea>
-            </div>
+          <div className='flex flex-col w-2/5 font-serif'>
+            <h3 className="text-5xl font-semibold mb-4">Get In Touch</h3>
+            <p className="text-gray-400 mb-6 text-5xl">
+              I'm always interested in hearing about new projects, so if you'd like
+              to chat, please get in touch.
+            </p>
+          </div>
+          <form action="#" method="POST" className="space-y-4">
+            <input
+              type="text"
+              name="name"
+              placeholder="Your Name"
+              className="w-full rounded-md border border-gray-700 bg-gray-800 px-4 py-2 text-white focus:border-blue-500 focus:outline-none"
+              required
+            />
+            <input
+              type="email"
+              name="email"
+              placeholder="Your Email"
+              className="w-full rounded-md border border-gray-700 bg-gray-800 px-4 py-2 text-white focus:border-blue-500 focus:outline-none"
+              required
+            />
+            <textarea
+              name="message"
+              placeholder="Your Message"
+              className="w-full rounded-md h-24 border border-gray-700 bg-gray-800 px-4 py-2 text-white focus:border-blue-500 focus:outline-none"
+              required
+            ></textarea>
             <button
               type="submit"
-              className="mt-6 w-full bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-700 transition ease-in-out duration-500"
+              className="w-full bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-700 transition ease-in-out duration-500"
             >
               Send Message
             </button>
           </form>
         </div>
-
+        <div className="container mx-auto flex flex-wrap justify-between gap-8 mb-10">
         {/* Call to Action & Social Links Section */}
-        <div className="w-full md:w-1/2 flex justify-between items-center">
-          <div className="flex flex-col space-y-4">
-            <a
-              href="#"
-              className="text-blue-500 hover:text-blue-700 text-xl font-bold"
-            >
-              Hire Me
+        <div className="w-full md:w-1/3 flex flex-col justify-between mb-8 md:mb-0">
+          <div className="flex space-x-6 mt-8">
+            <a href="#" className="text-gray-400 hover:text-gray-300 transition duration-300">
+              <FontAwesomeIcon icon={faFacebook} size="2x" />
             </a>
-            <a
-              href="#"
-              className="text-blue-500 hover:text-blue-700 text-xl font-bold"
-            >
-              View My Portfolio
+            <a href="#" className="text-gray-400 hover:text-gray-300 transition duration-300">
+              <FontAwesomeIcon icon={faTwitter} size="2x" />
+            </a>
+            <a href="#" className="text-gray-400 hover:text-gray-300 transition duration-300">
+              <FontAwesomeIcon icon={faLinkedin} size="2x" />
             </a>
           </div>
-          <div className="flex space-x-4">
-            <a href="#" className="text-gray-400 hover:text-gray-300">
-              <FontAwesomeIcon icon={faFacebook} />
+        </div>
+
+        {/* Contact Info Section */}
+        <div className="w-full md:w-1/3 flex flex-col justify-between mb-8 md:mb-0">
+          <div className="flex flex-col space-y-4">
+            <h3 className="text-3xl font-bold mb-4">Contact Info</h3>
+            <a href="mailto:your.email@example.com" className="text-gray-400 hover:text-gray-300 flex items-center transition duration-300">
+              <FontAwesomeIcon icon={faEnvelope} className="mr-2" />
+              <span>your.email@example.com</span>
             </a>
-            <a href="#" className="text-gray-400 hover:text-gray-300">
-              <FontAwesomeIcon icon={faTwitter} />
+            <a href="tel:555-555-5555" className="text-gray-400 hover:text-gray-300 flex items-center transition duration-300">
+              <FontAwesomeIcon icon={faPhoneAlt} className="mr-2" />
+              <span>(555) 555-5555</span>
             </a>
-            <a href="#" className="text-gray-400 hover:text-gray-300">
-              <FontAwesomeIcon icon={faLinkedin} />
+          </div>
+          <div className="mt-8">
+            <a
+              href="#"
+              className="inline-flex items-center px-4 py-2 bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-bold rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-500 transition ease-in-out duration-500"
+            >
+              <FontAwesomeIcon icon={faCoffee} className="mr-2" />
+              Buy Me a Coffee
             </a>
           </div>
         </div>
       </div>
-      {/* Contact Info Section */}
-  <div className="w-full md:w-1/2 mt-8 md:mt-0 flex justify-between items-center">
-    <div className="flex flex-col space-y-2">
-      <a href="#" className="text-gray-400 hover:text-gray-300 flex items-center">
-        <FontAwesomeIcon icon={faEnvelope} className="mr-2" />
-        <span>your.email@example.com</span>
-      </a>
-      <a href="#" className="text-gray-400 hover:text-gray-300 flex items-center">
-        <FontAwesomeIcon icon={faPhoneAlt} className="mr-2" />
-        <span>(555) 555-5555</span>
-      </a>
-    </div>
-    <a
-      href="#"
-      className="inline-flex items-center px-4 py-2 bg-yellow-400 hover:bg-yellow-500 text-white rounded-md font-bold"
-    >
-      <FontAwesomeIcon icon={faCoffee} className="mr-2" />
-      Buy Me a Coffee
-    </a>
-  </div>
- </footer>
-)
-}
+      <h1 className='text-center mb-20'>Austin Obimbo ©2024</h1>
+    </footer>
+  );
+};
 
 export default Footer;
