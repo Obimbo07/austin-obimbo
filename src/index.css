@@ -2,6 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+
+.navigation-bar {
+  position: absolute;
+}
+
+.navigation-content {
+  background: linear-gradient(to right, #4e54c8, #8f94fb);
+}
+
+@media(min-width: 1024px) {
+  .navigation-content {
+    padding: 25px;
+  }
+}
+/*
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -68,4 +83,4 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
-}
+} */
