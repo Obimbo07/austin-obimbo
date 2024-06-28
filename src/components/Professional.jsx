@@ -5,10 +5,10 @@ const Professional = () => {
     <>    
     <h1 className="text-center text-3xl text-blue-700 font-bold m-4">Professional Summary</h1>
     <div className='flex flex-col md:flex-row justify-center p-4'>
-      <div className='md:w-1/3 w-full h-auto mb-4 md:mb-0'>
+      <div className='md:w-1/3 grow flex justify-center h-auto w-full mb-4 md:mb-0'>
         <img
-          className='w-full h-auto rounded-md shadow-md transform hover:scale-105 transition-transform duration-300'
-          src='passport.jpeg'
+          className='h-2/5 grid rounded-full shadow-md transform hover:scale-105 transition-transform duration-300'
+          src='rename.jpg'
           alt='professional-passport-photo-austin-obimbo'
         />
       </div>
@@ -48,10 +48,10 @@ const Professional = () => {
           </p>
         </div>
         <div>
-          <h3 className='text-xl font-bold text-blue-600 mb-2'>Volunteer</h3>
+          <h3 className='text-xl font-bold text-blue-600 mb-2'>Volunteer mentor</h3>
           <p className='text-gray-700 hover:text-blue-500 transition-colors duration-300'>
-            Qui ex nulla laboris exercitation occaecat. Fugiat quis sunt elit labore. Duis dolor adipisicing tempor in minim cillum occaecat qui.
-            Mollit cillum laborum deserunt qui consequat elit. Do do ea dolore cupidatat non. In esse laboris deserunt eiusmod irure culpa ipsum elit.
+            I have been able to offer introductory pathways to fellow innovators and aspiring ones. This has enable me develop a sense of personal Understanding and growth.
+            As a mentor i help offer technological insights on areas needed. I am always available to contact.   
           </p>
         </div>
       </div>

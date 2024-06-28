@@ -63,7 +63,7 @@ const Hero = () => {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplaySpeed: 100000,
+    autoplaySpeed: 5000,
     autoplay: true,
     initialSlide: 0,
     responsive: [
@@ -98,7 +98,7 @@ const Hero = () => {
       {slidesData.map((slide, index) => (
         <div
           key={index}
-          className={`hero-slide ${slide.className}`} // Apply class names for background images
+          className={`hero-slide ${slide.className}`}
         >
           <div className="hero-content">
             <h2 className="hero-heading">{slide.heading}</h2>
