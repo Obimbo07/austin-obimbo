@@ -7,20 +7,22 @@ import Project from '../components/Project';
 import Partners from '../components/Partners';
 import Technologies from '../components/Technologies';
 import Blog from './Blog';
-import Footer from '../components/Footer';
+import About from '../components/About';
+import GithubContibutionGraph from '../components/GithubContributionGraph';
 
 const Home = () => {
   return (
     <>
         <Hero />
-        <Cards />
+        <About /> 
         <Professional />
+        <GithubContibutionGraph />
+        {/* <Cards />
         <Experience />
         <Project />
         <Partners />
         <Technologies />
-        <Blog />
-        <Footer />
+        <Blog /> */}
     </>
   )
 }
