@@ -8,6 +8,7 @@ const experience = [
     description: 'Work on 30+ projects',
     date: 'Feb 14th 2023 - Present',
   },
+  
 ];
 
 const achievements = [
@@ -24,6 +25,8 @@ const Experience = () => {
     <section className="experience-section p-4 m-4">
       <div className="container mx-auto flex flex-col md:flex-row gap-10">
         <div className="description-section flex flex-col justify-center w-full md:w-1/2 mb-4 md:mb-0 animate-slide-in-left">
+          <h2 className="text-3xl font-bold text-blue-700 mb-4">Work History</h2>
+          <p className="text-sm text-gray-600 mb-4 w-30">
           <h2 className="text-3xl font-bold text-blue-700 text-center mb-4">Work History</h2>
           <p className="text-lg text-gray-600 mb-4 text-center">
             With a diverse experience I am able to work and manage various challenges engineered by software.

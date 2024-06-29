@@ -56,7 +56,13 @@ const slidesData = [
   },
 ];
 
-
+const SocialLinks = () => {
+  return(
+    <>
+      <div></div>
+    </>
+  )
+}
 const Hero = () => {
   var settings = {
     dots: true,
@@ -95,6 +101,7 @@ const Hero = () => {
 
   return (
     <Slider className="hero-slider-container" {...settings}>
+    
       {slidesData.map((slide, index) => (
         <div
           key={index}
