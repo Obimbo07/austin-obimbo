@@ -15,7 +15,7 @@ const articles = [
     description:
       'Mentoring juniors and non-techies into the world of software development is a journey fraught with challenges and rewards.',
     image: 'gas.png',
-    link: 'full_article.html',
+    link: 'https://medium.com/@obimboausts/guiding-the-next-generation-a-mentorsthoughts-2d6a9bdf11a6',
   },
 ];
 
@@ -30,7 +30,7 @@ const Blog = () => {
             <div className="px-6 py-4">
               <h3>{article.name}</h3>
               <p className="text-gray-700">{article.description}</p>
-              <a href={article.link} className="text-blue-500 hover:text-blue-700">
+              <a href={article.link} className="text-center text-blue-500 hover:text-blue-700">
                 Read More
               </a>
             </div>

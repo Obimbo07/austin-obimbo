@@ -27,12 +27,14 @@ const Experience = () => {
         <div className="description-section flex flex-col justify-center w-full md:w-1/2 mb-4 md:mb-0 animate-slide-in-left">
           <h2 className="text-3xl font-bold text-blue-700 mb-4">Work History</h2>
           <p className="text-sm text-gray-600 mb-4 w-30">
+          <h2 className="text-3xl font-bold text-blue-700 text-center mb-4">Work History</h2>
+          <p className="text-lg text-gray-600 mb-4 text-center">
             With a diverse experience I am able to work and manage various challenges engineered by software.
           </p>
           <button className="bg-blue-700 text-white p-2 rounded mb-4 hover:bg-blue-800 transition duration-300">
             Contact Me
           </button>
-          <h3 className="text-2xl font-semibold text-blue-700 mb-4">Achievements</h3>
+          <h3 className="text-2xl font-bold text-blue-700 mb-4 text-center underlined">Achievements</h3>
           <div className="timeline overflow-y-auto pr-4">
             <ul className="list-none pl-0">
               {achievements.map((achievement) => (
@@ -48,18 +50,23 @@ const Experience = () => {
             </ul>
           </div>
         </div>
-        <h3 className="text-2xl font-semibold text-blue-700 mb-4 text-center">Work Experience</h3>
+        <div className="description-section flex flex-col justify-center w-full md:w-1/2 mb-4 md:mb-0 animate-slide-in-left" >
+        <h3 className="text-2xl font-bold text-blue-700 mb-4 md:text-center">Work Experience</h3>
 
         <div className="experience-list flex flex-col justify-center w-full md:w-1/2 animate-slide-in-left">
-          {experience.map((exp) => (
-            <div className="experience-item p-4 rounded-lg border mb-4" key={exp.index}>
-              <div className="flex flex-col md:flex-row md:justify-between items-start md:items-center">
-                <h3 className="text-2xl font-bold text-gray-800 mb-2 md:mb-0">{exp.workTitle}</h3>
-                <span className="text-gray-600">{exp.date}</span>
+            {experience.map((exp) => (
+              <div className="experience-item relative p-4 mb-6" key={exp.index}>
+                <div className="absolute inset-0 rounded-lg border-4 border-gradient bg-gradient-to-r from-blue-500 to-purple-500 -z-10"></div>
+                <div className="relative bg-white p-6 rounded-lg shadow-lg z-10">
+                  <div className="flex flex-col md:flex-row md:justify-between items-start md:items-center">
+                    <h3 className="text-2xl font-bold text-gray-800 mb-2 md:mb-0">{exp.workTitle}</h3>
+                    <span className="text-gray-600">{exp.date}</span>
+                  </div>
+                  <p className="text-gray-700 mt-2">{exp.description}</p>
+                </div>
               </div>
-              <p className="text-gray-700 mt-2">{exp.description}</p>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
     </section>
