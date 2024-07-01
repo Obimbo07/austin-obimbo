@@ -9,20 +9,24 @@ import Technologies from '../components/Technologies';
 import Blog from './Blog';
 import About from '../components/About';
 import GithubContibutionGraph from '../components/GithubContributionGraph';
+import InteractiveUi from '../components/InteractiveUi';
 
 const Home = () => {
   return (
     <>
-        <Hero />
+      <div className=' inset-0 rounded-lg border-4 border-gradient bg-gradient-to-r from-blue-700 to-green-700 -z-10'>
+      <Hero />
         <About /> 
         <Professional />
         <GithubContibutionGraph />
-        {/* <Cards />
+        <InteractiveUi />
+        <Cards />
         <Experience />
         <Project />
         <Partners />
         <Technologies />
-        <Blog /> */}
+        <Blog />
+      </div>
     </>
   )
 }
