@@ -6,7 +6,7 @@ import "../css/hero.css";
 
 const slidesData = [
   {
-    className: "slide-1", // Use class names instead of backgroundImage
+    className: "slide-1",
     heading: "Hey there, I am Austin Obimbo",
     texts: [
       "Certified Software Engineer",
