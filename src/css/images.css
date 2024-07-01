@@ -1,0 +1,25 @@
+.slide-1 {
+    background-image: url('/vision.jpg');
+  }
+  
+.slide-2 {
+    background-image: url('/IMG_3892.jpg');
+}
+.passport-1 {
+    background-image: url('/passport.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-clip: padding-box;
+    background-origin: border-box;
+    background-blend-mode: overlay;
+}
+
+.booking-image {
+    background-image: url('/about.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-clip: padding-box;
+    background-origin: border-box;
+}
