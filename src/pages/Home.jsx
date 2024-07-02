@@ -13,8 +13,9 @@ import InteractiveUi from '../components/InteractiveUi';
 
 const Home = () => {
   return (
-    <>
-      <div className=' inset-0 rounded-lg border-4 border-gradient bg-gradient-to-r from-blue-700 to-green-700 -z-10'>
+    <> 
+    
+    <div   className='border-8 border-gradient bg-gradient-to-r from-red-800 to-green-800' >
       <Hero />
         <About /> 
         <Professional />
