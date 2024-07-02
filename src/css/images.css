@@ -23,3 +23,10 @@
     background-clip: padding-box;
     background-origin: border-box;
 }
+
+.software {
+    background-image: url('/softwareA.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
