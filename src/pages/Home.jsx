@@ -1,7 +1,6 @@
 import React from 'react';
 import Hero from '../components/Hero';
 import Cards from '../components/Cards';
-import Professional from '../components/Professional';
 import Experience from '../components/Experience';
 import Project from '../components/Project';
 import Partners from '../components/Partners';
@@ -14,11 +13,9 @@ import InteractiveUi from '../components/InteractiveUi';
 const Home = () => {
   return (
     <> 
-    
-    <div   className='border-8 border-gradient bg-gradient-to-r from-red-800 to-green-800' >
-      <Hero />
+      <div className='dark-striped-background'>
+        <Hero />
         <About /> 
-        <Professional />
         <GithubContibutionGraph />
         <InteractiveUi />
         <Cards />
