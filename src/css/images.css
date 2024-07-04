@@ -102,6 +102,10 @@
     background-blend-mode: overlay;
 }
 
+.at-office:hover {
+  background-size: 170%;
+}
+
 .toolbox {
   background-image: url('/vs-code.png'), url('/nodejs.png'), url('/postgres.png'), url('/aws-logo.png');
   background-repeat: no-repeat;

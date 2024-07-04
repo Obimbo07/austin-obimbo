@@ -52,7 +52,7 @@ const Experience = () => {
         </div>
         
         <div className="description-section flex flex-col justify-center w-full md:w-1/2 mb-4 md:mb-0 animate-slide-in-left" >
-        <h3 className="text-2xl font-bold text-blue-700 mb-4 md:text-center">Work Experience</h3>
+        <h3 className="text-2xl font-bold text-blue-700 mb-4 md:text-center outline text-center p-2">Work Experience</h3>
 
         <div className="experience-list flex flex-col justify-center w-full md:w-1/2 animate-slide-in-left">
             {experience.map((exp) => (

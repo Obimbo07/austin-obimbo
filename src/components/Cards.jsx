@@ -58,12 +58,12 @@ const Cards = () => {
 
   return (
     <>
-      <h1 id="services" className="text-5xl font-bold text-black-800 text-center mt-10 p-4 text-white">Services</h1>
+      <h1 id="services" className="text-5xl font-bold text-black-800 text-center mt-10 p-8 text-white outline">Services</h1>
       <div ref={ref} className="grid grid-cols-2 md:grid-cols-3 gap-4 m-4">
         {cardData.map((card, index) => (
           <motion.div
             key={index}
-            className="bg-white rounded-lg shadow-md p-4 transition-transform transform hover:-translate-y-2 hover:shadow-xl hover:bg-blue-50"
+            className="bg-neutral-700 rounded-lg shadow-md p-4 transition-transform transform hover:-translate-y-2 hover:shadow-xl hover:bg-blue-900"
             initial={{ opacity: 0, y: 50 }}
             animate={animation}
           >
@@ -71,10 +71,10 @@ const Cards = () => {
               <FontAwesomeIcon icon={card.icon} className="text-6xl text-blue-500 transition-transform transform hover:scale-110 hover:text-blue-700" />
             </div>
             <div className="flex justify-between items-center pt-4">
-              <h3 className="text-lg font-semibold transition-colors duration-300 hover:text-blue-700">{card.title}</h3>
+              <h3 className="text-lg font-semibold transition-colors duration-300 text-neutral-100 hover:text-blue-700">{card.title}</h3>
               <button href="#Contact" className="text-blue-500 hover:text-blue-700">Learn More</button>
             </div>
-            <p className="text-gray-600 pt-2">{card.description}</p>
+            <p className="text-neutral-100 pt-2">{card.description}</p>
           </motion.div>
         ))}
       </div>

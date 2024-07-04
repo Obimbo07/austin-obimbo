@@ -54,17 +54,17 @@ const InteractiveUi = () => {
           variants={sectionVariants}
           transition={{ duration: 1 }}
         >
-          <div className="rounded-2xl shadow-2xl size-40 md:size-52 hover:size-44 resume flex items-end justify-center text-center text-3xl opacity-70 outline outline-1  outline-offset-2 outline-neutral-100">
+          <a href='https://drive.google.com/file/d/14oawHPuNXChYYcxJ_On0InIbBeMjd5ML/view?usp=share_link' target="_blank" className="rounded-2xl shadow-2xl size-40 md:size-52 hover:size-44 resume flex items-end justify-center text-center text-3xl opacity-70 outline outline-1  outline-offset-2 outline-neutral-100">
               <h2 className="h-min rounded-2xl text-white bg-gradient-to-t from-blue-700 to-dark-500 w-full text-white font-sans">
                 Resume
               </h2>
-          </div>
+          </a>
 
-          <div className='at-office shadow-2xl size-40 md:size-52 text-3xl text-center flex items-end justify-center rounded-3xl opacity-80 outline outline-1  outline-offset-2 outline-neutral-100'>
+          <a href="/about" className='at-office hover:bg-size-10 shadow-2xl size-40 md:size-52 text-3xl text-center flex items-end justify-center rounded-3xl opacity-80 outline outline-1  outline-offset-2 outline-neutral-100'>
             <h1 className='w-full rounded-3xl bg-gradient-to-t from-blue-700 to-dark-500 hover:opacity-80 font-sans text-white py-4'>
               About Me
             </h1>
-          </div>
+          </a>
         </motion.div>
 
         <motion.div
@@ -92,25 +92,25 @@ const InteractiveUi = () => {
               </div>
 
               <div className="shadow-2xl opacity-90 hover:opacity-90 bg-gradient-to-t from-blue-600 to-dark-900 rounded-xl h-auto grow ">
-                <div className="text-center text-2xl flex justify-around text-white">
-                  <Link to='/projects' className="text-white">Projects</Link>
-                  <Link to='#services' className="text-white">Services</Link>
+                <div className="text-center flex justify-around text-white">
+                  <Link to='/projects' className="text-white hover:underline">PROJECTS</Link>
+                  <Link to='#services' className="text-white hover:underline">SERVICES</Link>
                 </div>
               </div>
             </div>
 
-            <div className="toolbox shadow-2xl md:w-2/3 md:h-48 h-40 rounded-3xl grow utline outline outline-1  outline-offset-2 outline-neutral-100">
+            <a  href="/technologies" className="toolbox shadow-2xl md:w-2/3 md:h-48 h-40 rounded-3xl grow utline outline outline-1  outline-offset-2 outline-neutral-100">
               <div className="w-full h-full bg-gradient-to-t from-blue-600 to-dark-900 rounded-3xl flex items-end justify-center text-center opacity-90">
                 <p className="text-white font-bold text-3xl font-sans">Toolkit</p>
               </div>
-            </div>
+            </a>
           </div>
         </motion.div>
       </div>
       <div className="flex justify-center p-8">
-        <button className="p-2 rounded-lg bg-neutral-50 ">
+        <a href="/about" className="p-2 rounded-lg bg-neutral-50 ">
           Learn More
-        </button>
+        </a>
       </div>
     </>
   );

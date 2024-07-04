@@ -2,7 +2,7 @@ import React from 'react';
 import { useForm, ValidationError } from '@formspree/react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faPhoneAlt, faCoffee, faLocation } from '@fortawesome/free-solid-svg-icons';
-import { faGithub, faLinkedin, faMedium } from '@fortawesome/free-brands-svg-icons';
+import { faGithub, faLinkedin, faMedium, faTwitter } from '@fortawesome/free-brands-svg-icons';
 
 
 const Footer = () => {
@@ -71,13 +71,13 @@ const Footer = () => {
         <div className="w-full md:w-1/3  justify-between mb-10 md:mb-0">
           {/* <h1 className='text-center font-bold text-3xl'>Social links</h1> */}
           <div className="flex space-x-6 mt-8 justify-center md:justify-start">
-            {/* <a href="#" className="text-gray-400 hover:text-gray-300 transition duration-300">
-              <FontAwesomeIcon icon={} size="2x" />
-            </a> */}
-            <a href="#" className="text-gray-400 hover:text-gray-300 transition duration-300">
+            <a href="https://x.com/austs_" className="text-gray-400 hover:text-gray-300 transition duration-300">
+              <FontAwesomeIcon icon={faTwitter} size="2x" />
+            </a>
+            <a href="https://medium.com/@obimboausts" className="text-neutral-400 hover:text-gray-300 transition duration-300">
               <FontAwesomeIcon icon={faMedium} size="2x" />
             </a>
-            <a href="https://www.linkedin.com/in/austin-obimbo/" className="text-gray-400 hover:text-gray-300 transition duration-300">
+            <a href="https://www.linkedin.com/in/austin-obimbo/" className=" text-neutral-400 hover:text-gray-300 transition duration-300">
               <FontAwesomeIcon icon={faLinkedin} size="2x" />
             </a>
             <a href="https://www.github.com/Obimbo07" className="text-gray-400 hover:text-gray-300 transition duration-300">
@@ -101,7 +101,7 @@ const Footer = () => {
             </a>
             <a className="text-gray-400 hover:text-gray-300 flex items-center transition duration-300">
               <FontAwesomeIcon icon={faLocation} className="mr-2" />
-              <span>Momabasa, Kenya</span>
+              <span>Mombasa, Kenya</span>
             </a>
           </div>
           <div className="mt-8">

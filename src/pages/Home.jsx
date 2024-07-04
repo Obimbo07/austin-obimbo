@@ -21,7 +21,6 @@ const Home = () => {
         <GithubContibutionGraph />
         <Cards />
         <Experience />
-        <Project />
         <Partners />
         <Blog />
       </div>

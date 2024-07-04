@@ -6,7 +6,7 @@ export const projects = [
     name: 'Business management system',
     description: 'The system allows Clients book services offered by the business. Workers are assigned to booked service by administrators. The system has inclusive Mpesa payment system to help collect payments from clients booked service which dispatches the commission to the worker too.The workers dashboard with a "Request cash out" button enables workers request commission earned from administrators.',
     technologies: ['Ruby on Rails', 'Daraja API'],
-    image: 'daraja_mpesa.png',
+    image: 'business-managment.jpeg',
     liveLink: '#',
     sourceLink: 'https://github.com/Obimbo07/daraja-test',
     },
@@ -99,9 +99,9 @@ export const ProjectCard = ({ project }) => {
     const handleCloseModal = () => setShowModal(false);
   
     return (
-      <div className="h-fit sm:w-1/3 p-4 flex shadow-lg rounded-lg border-yellow-300 border-solid overflow-hidden ">
+      <div className="h-fit sm:w-1/2 p-4 flex shadow-lg rounded-lg border-yellow-300 border-solid overflow-hidden ">
 
-        <img className="w-1/2 h-48 grow object-fit" src={project.image} alt={project.name} />
+        <img className="w-1/2 h-48 grow object-fill" src={project.image} alt={project.name} />
         
         <div className="px-4 py-2 grow bg-gray-100">
           <h3 className="text-lg font-bold text-blue-700 hover:text-blue-800">{project.name}</h3>
