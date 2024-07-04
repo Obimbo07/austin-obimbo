@@ -5,9 +5,10 @@ const experience = [
     index: 1,
     workTitle: 'Self Employed',
     workLocation: 'Remote',
-    description: 'Work on 30+ projects',
+    description: 'Work on 30+ projects as a Full stack developer.I collaboratively spent 3000+ hours remotely understanding algorithms and data structures using techonologies i.e Ruby on rails , React (NextJs & Vite), and React Native.',
     date: 'Feb 14th 2023 - Present',
   },
+  
 ];
 
 const achievements = [
@@ -15,7 +16,7 @@ const achievements = [
     index: 0,
     title: 'Tech to the Rescue Zero Hunger Hackathon',
     date: '22nd - 24th May 2024',
-    description: 'Won the hackathon with a team of three',
+    description: 'Won the hackathon with a team of three...',
   },
 ];
 
@@ -23,32 +24,35 @@ const Experience = () => {
   return (
     <section className="experience-section p-4 m-4">
       <div className="container mx-auto flex flex-col md:flex-row gap-10">
-        <div className="description-section flex flex-col justify-center w-full md:w-1/2 mb-4 md:mb-0 animate-slide-in-left">
-          <h2 className="text-3xl font-bold text-blue-700 text-center mb-4">Work History</h2>
-          <p className="text-lg text-gray-600 mb-4 text-center">
+        <div className="description-section flex flex-col justify-center w-full md:w-1/2 mb-4 md:mb-0 animate-slide-in-left">         
+          <h2 className="text-3xl font-bold text-neutral-100 outline p-2 text-center md:text-center mb-4">Work History</h2>
+          <p className="text-lg text-white mb-4 text-center">
             With a diverse experience I am able to work and manage various challenges engineered by software.
           </p>
           <button className="bg-blue-700 text-white p-2 rounded mb-4 hover:bg-blue-800 transition duration-300">
-            Contact Me
+            Hire me
           </button>
-          <h3 className="text-2xl font-bold text-blue-700 mb-4 text-center underlined">Achievements</h3>
+          <h3 className="text-2xl font-bold text-blue-600 mb-4 text-center underlined">Achievements</h3>
           <div className="timeline overflow-y-auto pr-4">
             <ul className="list-none pl-0">
               {achievements.map((achievement) => (
                 <li key={achievement.index} className="timeline-item flex items-start mb-8">
                   <div className="timeline-marker bg-blue-500 h-4 w-4 rounded-full mr-4 mt-1"></div>
-                  <div className="timeline-content w-full">
-                    <p className="timeline-date text-gray-500">{achievement.date}</p>
+                  <div className="timeline-content w-full text-white">
+                    <div>
+                    <p className="timeline-date">{achievement.date}</p>
                     <h4 className="timeline-title text-lg font-bold">{achievement.title}</h4>
-                    <p className="timeline-description text-gray-700">{achievement.description}</p>
+                    <p className="timeline-description">{achievement.description}</p>
+                    </div>
                   </div>
                 </li>
               ))}
             </ul>
           </div>
         </div>
+        
         <div className="description-section flex flex-col justify-center w-full md:w-1/2 mb-4 md:mb-0 animate-slide-in-left" >
-        <h3 className="text-2xl font-bold text-blue-700 mb-4 md:text-center">Work Experience</h3>
+        <h3 className="text-2xl font-bold text-blue-700 mb-4 md:text-center outline text-center p-2">Work Experience</h3>
 
         <div className="experience-list flex flex-col justify-center w-full md:w-1/2 animate-slide-in-left">
             {experience.map((exp) => (
@@ -66,6 +70,7 @@ const Experience = () => {
           </div>
         </div>
       </div>
+    
     </section>
   );
 };

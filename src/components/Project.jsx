@@ -1,6 +1,6 @@
-/* eslint-disable react/prop-types */
 import React, { useState } from 'react';
 import Slider from 'react-slick';
+import { useNavigate } from 'react-router-dom';
 import { projects } from '../pages/Projects';
 import { Modal } from '../pages/Projects';
 import "slick-carousel/slick/slick.css"; 
@@ -34,11 +34,13 @@ const ProjectCard = ({ project }) => {
 };
 
 const Project = () => {
+  const navigation = useNavigate();
   if (!projects || projects.length === 0) {
     return <p>No projects available.</p>;
+    
   }
-
-  const recentProjects = projects.slice(0, 2);
+  
+  const recentProjects = projects.slice(0, 4);
   const otherProjects = projects.slice(2);
 
   const settings = {
@@ -75,10 +77,14 @@ const Project = () => {
     ]
   };
 
+  const handleProjects = () => {
+    navigation('/projects');
+  }
+
   return (
     <section className="container mx-auto px-4 py-8 bg-gradient-to-r from-blue-500 to-green-500">
       <div className='p-10 mx-auto'>
-        <h2 className="text-3xl font-bold text-white text-center mb-4">My Recent Projects</h2>
+        <h2 className="text-5xl font-bold font-serif text-white text-center mb-4">My Recent Projects</h2>
         <hr className="border-t border-white mb-6" />
         <Slider {...settings}>
           {recentProjects.map((project) => (
@@ -98,6 +104,12 @@ const Project = () => {
             </div>
           ))}
         </Slider>
+        
+      </div>
+      <div className='flex justify-center'>
+      <button className='bg-white rounded-lg p-2' onClick={handleProjects}>
+          View more
+      </button>
       </div>
     </section>
   );
