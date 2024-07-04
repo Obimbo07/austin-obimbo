@@ -6,7 +6,7 @@ import "../css/hero.css";
 
 const slidesData = [
   {
-    className: "slide-1", // Use class names instead of backgroundImage
+    className: "slide-1",
     heading: "Hey there, I am Austin Obimbo",
     texts: [
       "Certified Software Engineer",
@@ -56,14 +56,20 @@ const slidesData = [
   },
 ];
 
-
+const SocialLinks = () => {
+  return(
+    <>
+      <div></div>
+    </>
+  )
+}
 const Hero = () => {
   var settings = {
     dots: true,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplaySpeed: 100000,
+    autoplaySpeed: 5000,
     autoplay: true,
     initialSlide: 0,
     responsive: [
@@ -95,10 +101,11 @@ const Hero = () => {
 
   return (
     <Slider className="hero-slider-container" {...settings}>
+    
       {slidesData.map((slide, index) => (
         <div
           key={index}
-          className={`hero-slide ${slide.className}`} // Apply class names for background images
+          className={`hero-slide ${slide.className}`}
         >
           <div className="hero-content">
             <h2 className="hero-heading">{slide.heading}</h2>

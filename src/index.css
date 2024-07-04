@@ -9,6 +9,20 @@
 
 .navigation-content {
   background: linear-gradient(to right, #4e54c8, #8f94fb);
+  padding: 6%;
+  position: fixed;
+  z-index: 1000;
+  bottom: 0;
+  left: 10%;
+  /* right: 9%; */
+  background-color: #00008bd4;
+  /* border-radius: 18px; */
+  width: -webkit-fill-available;
+  height: fit-content;
+}
+
+.navigation-content li a {
+  display: flex;
 }
 
 @media(min-width: 1024px) {
@@ -16,6 +30,13 @@
     padding: 25px;
   }
 }
+
+/* styles.css */
+.dark-striped-background {
+  background-color: #101019;
+}
+
+
 /*
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;

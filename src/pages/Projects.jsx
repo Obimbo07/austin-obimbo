@@ -1,17 +1,32 @@
 import React, { useState } from 'react'
 
+
 export const projects = [
+   {
+    name: 'Business management system',
+    description: 'The system allows Clients book services offered by the business. Workers are assigned to booked service by administrators. The system has inclusive Mpesa payment system to help collect payments from clients booked service which dispatches the commission to the worker too.The workers dashboard with a "Request cash out" button enables workers request commission earned from administrators.',
+    technologies: ['Ruby on Rails', 'Daraja API'],
+    image: 'business-managment.jpeg',
+    liveLink: '#',
+    sourceLink: 'https://github.com/Obimbo07/daraja-test',
+    },
     {
-      index: 0,
+      name: 'Daraja test',
+      description: 'An implementation of Mpesa daraja Api stkquery and stkpush.',
+      technologies: ['Ruby on Rails', 'Daraja API'],
+      image: 'daraja_mpesa.png',
+      liveLink: '#',
+      sourceLink: 'https://github.com/Obimbo07/daraja-test',
+    },
+    {
       name: 'Book Destination',
       description: 'This Full stack application helps users reserve holiday, meeting and BNB destinations, in various places. Users have can perform CRUD operations on the destinations.',
       technologies: ['Ruby on Rails', 'React/Redux'],
-      image: 'Olay .png',
+      image: 'book_destination_logo.jpeg',
       liveLink: 'https://www.olaycompany.com',
       sourceLink: 'Not Sourced on Github',
     },
     {
-      index: 1,
       name: 'Budget App',
       description: 'A more generic versioned Budget App, that includes transaction management features. A User authentication system using JWT authentication.',
       image: 'budget-app.jpg',
@@ -20,7 +35,6 @@ export const projects = [
       sourceLink: 'https://github.com/user/project2',
     },
     {
-      index: 2,
       name: 'Recipe Daily',
       description: 'is a User authenticated application that allows them perform CRUD operations on recipe meals. The add food feature enables users to create unique recipes and decide which ones to display publicly to all users.',
       technologies: ['HTML', 'Bootstrap', 'Ruby on rails'],
@@ -29,7 +43,6 @@ export const projects = [
       sourceLink: 'https://github.com/user/project1',
     },
     {
-      index: 3,
       name: 'Catalogue of My Things',
       description: 'Collaborated on this console app that helps users manage their category of things. The menu is user-friendly and interactive with a list of options. A record of different types of things you own: books, music albums, movies, and games. The data will be stored in JSON files but will also prepare a database with tables structure analogical to the program\'s class structure.',
       technologies: ['Ruby', 'Console Interface'],
@@ -38,7 +51,6 @@ export const projects = [
       sourceLink: 'https://github.com/user/project1',
     },
     {
-      index: 4,
       name: 'Space X Travellers Hub',
       description: 'I collaborated remotely with team members in this frontend application to utilize API calls to render a list of Space X dragons and space shuttles. Using redux to handle state, I was able to save bookings of the dragons.',
       technologies: ['React', 'Bootstrap', 'Redux'],
@@ -47,34 +59,30 @@ export const projects = [
       sourceLink: 'https://github.com/user/project1',
     },
     {
-      index: 5,
-      name: 'Multi Post Stories',
-      description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
-      technologies: ['HTML', 'Bootstrap', 'Ruby on rails'],
+      name: 'Tdn',
+      description: 'The devise authenticated blog app allows users connect andf chat with each other.',
+      technologies: ['Bootstrap', 'Ruby on rails'],
       image: 'projects.png',
       liveLink: 'https://example.com/project1',
-      sourceLink: 'https://github.com/user/project1',
+      sourceLink: 'https://github.com/Obimbo07/tdn',
     },
     {
-      index: 6,
-      name: 'Multi Post Stories',
-      description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
-      technologies: ['HTML', 'Bootstrap', 'Ruby on rails'],
+      name: 'School library system',
+      description: 'An Object oriented ruby tool that allows school library manage record books in a library. The system helps manage students, teachers and books and rented books.',
+      technologies: ['Ruby'],
       image: 'projects.png',
       liveLink: 'https://example.com/project1',
-      sourceLink: 'https://github.com/user/project1',
+      sourceLink: 'https://github.com/Obimbo07/school-library',
     },
     {
-      index: 7,
-      name: 'Multi Post Stories',
-      description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
-      technologies: ['HTML', 'Bootstrap', 'Ruby on rails'],
+      name: 'Vet Clinic Database',
+      description: 'Designed a clinical database to help manage patient records and clinical inventory',
+      technologies: ['Ruby'],
       image: 'projects.png',
       liveLink: 'https://example.com/project1',
-      sourceLink: 'https://github.com/user/project1',
+      sourceLink: 'https://Obimbo07/vet-clinic',
     },
     {
-      index: 8,
       name: 'Multi Post Stories',
       description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
       technologies: ['HTML', 'Bootstrap', 'Ruby on rails'],
@@ -82,7 +90,6 @@ export const projects = [
       liveLink: 'https://example.com/project1',
       sourceLink: 'https://github.com/user/project1',
     },
-    // Add more project objects as needed
 ];
 
 export const ProjectCard = ({ project }) => {
@@ -92,9 +99,11 @@ export const ProjectCard = ({ project }) => {
     const handleCloseModal = () => setShowModal(false);
   
     return (
-      <div className="w-full rounded-lg shadow-md overflow-hidden mb-4">
-        <img className="w-full h-48 object-cover" src={project.image} alt={project.name} />
-        <div className="px-4 py-2 bg-gray-100">
+      <div className="h-fit sm:w-1/2 p-4 flex shadow-lg rounded-lg border-yellow-300 border-solid overflow-hidden ">
+
+        <img className="w-1/2 h-48 grow object-fill" src={project.image} alt={project.name} />
+        
+        <div className="px-4 py-2 grow bg-gray-100">
           <h3 className="text-lg font-bold text-blue-700 hover:text-blue-800">{project.name}</h3>
           <p className="text-sm text-gray-600 mb-2">{project.description.slice(0, 100)}...</p>
           <button
@@ -111,7 +120,7 @@ export const ProjectCard = ({ project }) => {
     );
   };
   
-  const Modal = ({ project, onClose }) => {
+  export const Modal = ({ project, onClose }) => {
     return (
       <div className="fixed inset-0 z-50 bg-gray-500/50 flex justify-center items-center">
         <div className="w-full max-w-lg rounded-lg bg-white p-4 shadow-md">
@@ -135,9 +144,9 @@ export const ProjectCard = ({ project }) => {
   
   const Projects = () => {
     return (
-      <section className="container mx-auto px-4 py-8">
-        <h2 className="text-3xl font-bold text-blue-700 mb-4">My Projects</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <section className="container mx-auto px-4 py-8 bg-gradient-to-r from-blue-500 to-green-500">
+        <h2 className="text-5xl font-bold text-blue-700 text-center font-serif mb-4">MY PROJECTS</h2>
+        <div className="sm:flex flex-wrap justify-stretch ">
           {projects.map((project) => (
             <ProjectCard key={project.id} project={project} />
           ))}

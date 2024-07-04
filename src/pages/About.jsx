@@ -1,8 +1,13 @@
 import React from 'react'
+import GitHubContributionGraph from '../components/GithubContributionGraph';
+
 
 const About = () => {
   return (
-    <div>About</div>
+    <div>
+    About
+    <GitHubContributionGraph />
+    </div>
   )
 }
 
