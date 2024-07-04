@@ -23,7 +23,6 @@
 
 .navigation-content li a {
   display: flex;
-  flex-direction: ;
 }
 
 @media(min-width: 1024px) {
@@ -31,6 +30,13 @@
     padding: 25px;
   }
 }
+
+/* styles.css */
+.dark-striped-background {
+  background-color: #101019;
+}
+
+
 /*
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;

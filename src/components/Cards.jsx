@@ -58,8 +58,8 @@ const Cards = () => {
 
   return (
     <>
-      <h1 className="text-5xl font-bold text-black-800 text-center mt-10 p-4">Services</h1>
-      <div ref={ref} className="grid grid-cols-1 md:grid-cols-3 gap-4">
+      <h1 id="services" className="text-5xl font-bold text-black-800 text-center mt-10 p-4 text-white">Services</h1>
+      <div ref={ref} className="grid grid-cols-2 md:grid-cols-3 gap-4 m-4">
         {cardData.map((card, index) => (
           <motion.div
             key={index}
