@@ -1,4 +1,3 @@
-// GitHubCalendar.jsx
 import React, { useState } from 'react';
 import GitHubCalendar from 'react-github-calendar';
 
@@ -12,8 +11,9 @@ const GitHubContributionGraph = () => {
   };
 
   return (
-    <div className="flex flex-col items-center my-8 pw-fit">
-     <h1 className='font-extrabold  decoration-sky-500/30 text-4xl pl-4 m-10 underline underline-offset-8 text-blue w-full font-mono text-start antialiased'>Github contibution calendar</h1>
+    <div className="flex flex-col items-center p-8 my-2 text-white">
+     <span className='bg-gray-500 h-2 w-1/2 mb-2 decoration-sky-500/30 underline-offset-8'></span>
+     <h1 className='font-extrabold text-4xl text-center w-full font-mono antialiased'>Github contibution calendar</h1>
       <div className="m-8">
         <button
           className="bg-blue-500 text-white p-2 rounded mr-2"
@@ -37,9 +37,9 @@ const GitHubContributionGraph = () => {
       <GitHubCalendar
         username={username}
         year={year}
-        blockMargin={4}
+        blockMargin={2}
         blockRadius={2}
-        blockSize={12}
+        blockSize={14}
         fontSize={14}
         showWeekdayLabels={true}
       />

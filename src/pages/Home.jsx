@@ -13,16 +13,16 @@ import InteractiveUi from '../components/InteractiveUi';
 const Home = () => {
   return (
     <> 
-      <div className='dark-striped-background'>
+      <div className='dark-striped-background '>
         <Hero />
-        <About /> 
+         <div className='md:mx-60'>
+           <InteractiveUi />
+         </div>
         <GithubContibutionGraph />
-        <InteractiveUi />
         <Cards />
         <Experience />
         <Project />
         <Partners />
-        <Technologies />
         <Blog />
       </div>
     </>
