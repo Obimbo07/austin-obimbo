@@ -5,14 +5,61 @@
 .slide-2 {
     background-image: url('/IMG_3892.jpg');
 }
-.passport-1 {
-    background-image: url('/passport.jpg');
+
+.passport-conn {
+    background-image: url('/passport.jpg'), url('/rename.jpg'), url('/vision.jpg'), url('/small-image-3.jpg');
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    background-size: 20%, 20%, 20%, 20%;
+    background-position: center, 15% 10%, 80% 20%, 20% 80%;
     background-clip: padding-box;
     background-origin: border-box;
     background-blend-mode: overlay;
+  }
+  
+  .central-image {
+    position: relative;
+    z-index: -1;
+  }
+  
+  .wave-effect::before, .wave-effect::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400%;
+    height: 200%;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.2);
+    transform: translate(-50%, -50%) scale(0);
+    animation: wave 4s infinite ease-in-out;
+  }
+  
+  .wave-effect::after {
+    animation-delay: 1s;
+  }
+  
+  @keyframes wave {
+    0% {
+      transform: translate(-50%, -50%) scale(0);
+    }
+    50% {
+      transform: translate(-50%, -50%) scale(1);
+    }
+    100% {
+      transform: translate(-50%, -50%) scale(0);
+    }
+  }
+.community-wall:hover .community-image {
+    display: none;
+}
+
+.community-wall:hover p {
+    display: none;
+}
+
+.community-wall:hover h2 {
+    display: block;
+    background-color: ;
 }
 
 .booking-image {
@@ -28,5 +75,45 @@
     background-image: url('/softwareA.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    
+    background-position-y: center;
+    background-position-x: center;
+
+}
+
+
+.resume {
+    background-image: url('/document-icon.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.resume:hover {
+    background-image: url('/resume-hover.jpg');
+    background-size: cover;
+    background-position-x: center;
+}
+.at-office {
+    background-image: url('/at_office.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-clip: padding-box;
+    background-origin: border-box;
+    background-blend-mode: overlay;
+}
+
+.toolbox {
+  background-image: url('/vs-code.png'), url('/nodejs.png'), url('/postgres.png'), url('/aws-logo.png');
+  background-repeat: no-repeat;
+  background-size: 20%, 20%, 20%, 20%;
+  background-position: center, 10% 10%, 80% 20%, 20% 80%;
+  background-clip: padding-box;
+  background-origin: border-box;
+  background-blend-mode: overlay;
+}
+
+.toolbox:hover {
+  background-size: 25%, 25%, 25%, 25%;
+  background-position: 10% 50%, 50% 10%, 90% 70%, 50% 50%;
+  background-clip: padding-box;
 }
