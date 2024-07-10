@@ -16,7 +16,7 @@ const achievements = [
     index: 0,
     title: 'Tech to the Rescue Zero Hunger Hackathon',
     date: '22nd - 24th May 2024',
-    description: 'Won the hackathon with a team of three',
+    description: 'Haba na Haba ussd application, a USSD-Based Surplus Food Distribution System, an innovative solution designed to combat food waste and improve food accessibility which connects surplus food providers with individuals in need through the use of Unstructured Supplementary Service Data (USSD) and Africa’s Talking API.',
     link: 'https://www.techtotherescue.org/hackathon/meet-the-winners/',
   },
 ];
