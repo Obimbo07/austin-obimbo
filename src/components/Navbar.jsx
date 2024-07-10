@@ -6,7 +6,7 @@ import { faHome, faUser, faCertificate, faProjectDiagram, faFileAlt, faEnvelope 
 const Navbar = () => {
   return (
     <>
-      <nav className="navigation-content">
+      <nav className="navigation-content md:sticky md:top-0">
         <ul className="flex flex-row flex-wrap sm:flex-row sm:space-x-10  justify-center gap-8">
           <li>
             <Link to="/" className="text-white hover:text-gray-200 flex  md:flex-col items-center space-x-2 transition duration-300">

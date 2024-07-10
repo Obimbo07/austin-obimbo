@@ -109,7 +109,11 @@ const Project = () => {
             </div>
           ))}
         </div>
-        
+        <div className='flex justify-center p-2'>
+          <button className='bg-white rounded-lg p-2' onClick={handleProjects}>
+              View more
+          </button>
+       </div>
       </div>
       
     </section>
