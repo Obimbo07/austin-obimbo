@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Slider from 'react-slick';
+import div from 'react-slick';
 import { useNavigate } from 'react-router-dom';
 import { projects } from '../pages/Projects';
 import { Modal } from '../pages/Projects';
@@ -40,8 +40,8 @@ const Project = () => {
     
   }
   
-  const recentProjects = projects.slice(0, 4);
-  const otherProjects = projects.slice(2);
+  const recentProjects = projects.slice(0, 3);
+  const otherProjects = projects.slice(3, 7);
 
   const settings = {
     dots: true,
@@ -84,33 +84,34 @@ const Project = () => {
   return (
     <section className="container mx-auto px-4 py-8 bg-gradient-to-r from-blue-500 to-green-500">
       <div className='p-10 mx-auto'>
-        <h2 className="text-5xl font-bold font-serif text-white text-center mb-4">My Recent Projects</h2>
+        <h2 className="text-3xl font-bold text-white mb-4">MY RECENT PROJECTS</h2>
         <hr className="border-t border-white mb-6" />
-        <Slider {...settings}>
+        <div className='flex flex-wrap md:flex-nowrap  gap-4' {...settings}>
           {recentProjects.map((project) => (
-            <div key={project.name} className="px-2">
+            <div key={project.name} className="px-2 w-fit">
               <ProjectCard project={project} />
             </div>
           ))}
-        </Slider>
+        </div>
+        <div className='flex justify-center p-2'>
+          <button className='bg-white rounded-lg p-2' onClick={handleProjects}>
+              View more
+          </button>
+       </div>
       </div>
       <div className='p-10 mx-auto'>
-        <h2 className="text-3xl font-bold text-white mb-4 text-center">My Projects</h2>
+        <h2 className="text-4xl font-bold text-white mb-4 text-center">MY PROJECTS</h2>
         <hr className="border-t border-white mb-6" />
-        <Slider {...settings}>
+        <div className='flex flex-wrap md:flex-nowrap  gap-4' {...settings}>
           {otherProjects.map((project) => (
-            <div key={project.name} className="px-2">
+            <div key={project.name} className="px-2 w-fit">
               <ProjectCard project={project} />
             </div>
           ))}
-        </Slider>
+        </div>
         
       </div>
-      <div className='flex justify-center'>
-      <button className='bg-white rounded-lg p-2' onClick={handleProjects}>
-          View more
-      </button>
-      </div>
+      
     </section>
   );
 };
