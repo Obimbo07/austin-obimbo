@@ -13,7 +13,7 @@ const GitHubContributionGraph = () => {
   return (
     <div className="flex flex-col items-center px-8 my-2 text-white">
      <span className='bg-gray-500 h-2 w-1/2 mb-4 decoration-sky-500/30 underline-offset-8'></span>
-     <h1 className='font-extrabold text-4xl text-center w-full font-mono antialiased outline'>Github contibution calendar</h1>
+     <h1 className='font-extrabold text-4xl text-center w-fit p-2 font-mono antialiased outline'>Github contibution calendar</h1>
       <div className="m-8">
         <button
           className="bg-blue-500 text-white p-2 rounded mr-2"
