@@ -16,7 +16,8 @@ const achievements = [
     index: 0,
     title: 'Tech to the Rescue Zero Hunger Hackathon',
     date: '22nd - 24th May 2024',
-    description: 'Won the hackathon with a team of three...',
+    description: 'Won the hackathon with a team of three',
+    link: 'https://www.techtotherescue.org/hackathon/meet-the-winners/',
   },
 ];
 
@@ -32,17 +33,21 @@ const Experience = () => {
           <button className="bg-blue-700 text-white p-2 rounded mb-4 hover:bg-blue-800 transition duration-300">
             Hire me
           </button>
-          <h3 className="text-2xl font-bold text-blue-600 mb-4 text-center underlined">Achievements</h3>
+          <h3 className="text-2xl font-bold text-white p-2 mb-4 text-center outline">Achievements</h3>
           <div className="timeline overflow-y-auto pr-4">
             <ul className="list-none pl-0">
               {achievements.map((achievement) => (
-                <li key={achievement.index} className="timeline-item flex items-start mb-8">
-                  <div className="timeline-marker bg-blue-500 h-4 w-4 rounded-full mr-4 mt-1"></div>
-                  <div className="timeline-content w-full text-white">
-                    <div>
-                    <p className="timeline-date">{achievement.date}</p>
-                    <h4 className="timeline-title text-lg font-bold">{achievement.title}</h4>
+                <li key={achievement.index} 
+                  className=" timeline-item flex items-start mb-8">
+                  <div className="timeline-marker bg-blue-500 h-4 w-4 rounded-full  mt-1"></div>
+                  <div className="timeline-content w-full text-white ">
+                    
+                    <div className='shadow-2xl p-4 rounded-xl m-2 text-neutral-700 bg-white '>
+                    <p className="timeline-date ">{achievement.date}</p>
+                    <h4 className="timeline-title text-blue-400 text-xl font-bold">{achievement.title}</h4>
                     <p className="timeline-description">{achievement.description}</p>
+                    <a className="font-bold text-blue-500 underline" href={achievement.link}>Learn more</a>
+
                     </div>
                   </div>
                 </li>
@@ -52,7 +57,7 @@ const Experience = () => {
         </div>
         
         <div className="description-section flex flex-col justify-center w-full md:w-1/2 mb-4 md:mb-0 animate-slide-in-left" >
-        <h3 className="text-2xl font-bold text-blue-700 mb-4 md:text-center outline text-center p-2">Work Experience</h3>
+        <h3 className="text-2xl font-bold text-white mb-4 md:text-center outline text-center p-2">Work Experience</h3>
 
         <div className="experience-list flex flex-col justify-center w-full md:w-1/2 animate-slide-in-left">
             {experience.map((exp) => (
