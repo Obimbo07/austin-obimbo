@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react'
 
 const AboutComponent = () => {
+  
   return (
     <>
       <div className="bg-grey-300 sm:flex">
@@ -13,12 +14,15 @@ const AboutComponent = () => {
               className='about-office-img rounded-3xl about-img'
            />
            <div>
-              <button 
-                className='bg-neutral-900 rounded-full text-white font-bold hover:text-blue-300 p-4 w-full'
-                >
-                 Get Resume
-                 <FontAwesomeIcon icon={faLink} className='ml-2' />
-              </button>
+           <a
+              href="https://docs.google.com/document/d/16JNuFYkcSz5_eDSnlnAezV_bU9NClhMa/edit?usp=sharing&ouid=107251804543803193655&rtpof=true&sd=true"
+              target="_blank" // This will open the link in a new tab
+              rel="noopener noreferrer" // This is a security measure when using target="_blank"
+              className='bg-neutral-900 rounded-full text-white font-bold hover:text-blue-300 p-4 w-full flex items-center justify-center'
+            >
+              Get Resume
+              <FontAwesomeIcon icon={faLink} className='ml-2' />
+            </a>
            </div>
         </div>
         <div className="p-6 flex flex-col justify-center">

@@ -54,7 +54,7 @@ const InteractiveUi = () => {
           variants={sectionVariants}
           transition={{ duration: 1 }}
         >
-          <a href='https://drive.google.com/file/d/14oawHPuNXChYYcxJ_On0InIbBeMjd5ML/view?usp=share_link' target="_blank" className="rounded-2xl shadow-2xl size-40 md:size-52 hover:size-44 resume flex items-end justify-center text-center text-3xl opacity-70 outline outline-1  outline-offset-2 outline-neutral-100">
+          <a href='https://docs.google.com/document/d/16JNuFYkcSz5_eDSnlnAezV_bU9NClhMa/edit?usp=sharing&ouid=107251804543803193655&rtpof=true&sd=true' target="_blank" className="rounded-2xl shadow-2xl size-40 md:size-52 hover:size-44 resume flex items-end justify-center text-center text-3xl opacity-70 outline outline-1  outline-offset-2 outline-neutral-100">
               <h2 className="h-min rounded-2xl text-white bg-gradient-to-t from-blue-700 to-dark-500 w-full text-white font-sans">
                 Resume
               </h2>
