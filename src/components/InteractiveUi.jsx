@@ -54,7 +54,7 @@ const InteractiveUi = () => {
           variants={sectionVariants}
           transition={{ duration: 1 }}
         >
-          <a href='https://drive.google.com/file/d/14oawHPuNXChYYcxJ_On0InIbBeMjd5ML/view?usp=share_link' target="_blank" className="rounded-2xl shadow-2xl size-40 md:size-52 hover:size-44 resume flex items-end justify-center text-center text-3xl opacity-70 outline outline-1  outline-offset-2 outline-neutral-100">
+          <a href='https://docs.google.com/document/d/16JNuFYkcSz5_eDSnlnAezV_bU9NClhMa/edit?usp=sharing&ouid=107251804543803193655&rtpof=true&sd=true' target="_blank" className="rounded-2xl shadow-2xl size-40 md:size-52 hover:size-44 resume flex items-end justify-center text-center text-3xl opacity-70 outline outline-1  outline-offset-2 outline-neutral-100">
               <h2 className="h-min rounded-2xl text-white bg-gradient-to-t from-blue-700 to-dark-500 w-full text-white font-sans">
                 Resume
               </h2>
@@ -87,21 +87,21 @@ const InteractiveUi = () => {
                   <img src="/rename.jpg" alt="Central" className="w-12 h-auto rounded-full" />
                   <div className="wave-effect absolute inset-2"></div>
                 </div>
-                <p className="font-sans text-white text-center font-bold pb-4 ">Community wall</p>
+                <p className="font-sans text-white text-center font-bold pb-4">Community wall</p>
                 <h2 className="hidden font-sans text-white text-center font-bold p-2 text-2xl bg-dark-900">Coming Soon</h2>
               </div>
 
-              <div className="shadow-2xl opacity-90 hover:opacity-90 bg-gradient-to-t from-blue-600 to-dark-900 rounded-xl h-auto grow ">
-                <div className="text-center flex justify-around text-white">
-                  <Link to='/projects' className="text-white hover:underline">PROJECTS</Link>
-                  <Link to='#services' className="text-white hover:underline">SERVICES</Link>
+              {/* <div className="shadow-2xl opacity-90 hover:opacity-90 bg-gradient-to-t from-blue-600 to-dark-900 rounded-xl h-auto grow ">
+                <div className="text-center flex font-bold justify-between flex-wrap text-white gap-4">
+                  <Link to='/projects' className="text-white hover:underline p-2">PROJECTS</Link>
+                  <Link to='#services' className="text-white hover:underline p-2">SERVICES</Link>
                 </div>
-              </div>
+              </div> */}
             </div>
 
             <a  href="/technologies" className="toolbox shadow-2xl md:w-2/3 md:h-48 h-40 rounded-3xl grow utline outline outline-1  outline-offset-2 outline-neutral-100">
               <div className="w-full h-full bg-gradient-to-t from-blue-600 to-dark-900 rounded-3xl flex items-end justify-center text-center opacity-90">
-                <p className="text-white font-bold text-3xl font-sans">Toolkit</p>
+                <p className="text-white font-bold text-2xl font-sans">Toolkit</p>
               </div>
             </a>
           </div>

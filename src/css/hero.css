@@ -21,13 +21,12 @@
 
 .navigation-content {
   padding: 6%;
-  position: fixed; /* Change to fixed to ensure the navbar stays at the bottom */
+  position: fixed;
   z-index: 1000;
   bottom: 0;
   left: 21%;
-  right: 9%; /* Add right to balance the left padding */
-  background-color: #00008bd4;
-  border-radius: 18px;
+  right: 9%; 
+  background: linear-gradient(to right, #535df1, #05072a);
   width: fit-content;
   height: fit-content;
 }
@@ -38,7 +37,6 @@
   justify-content: center;
   align-items: center;
   width: fit-content;
-  background:rgb(14 48 0 / 74%);
   padding: 16px;
   position: absolute;
   top: 20%;

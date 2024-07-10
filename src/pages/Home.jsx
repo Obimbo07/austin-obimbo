@@ -4,16 +4,14 @@ import Cards from '../components/Cards';
 import Experience from '../components/Experience';
 import Project from '../components/Project';
 import Partners from '../components/Partners';
-import Technologies from '../components/Technologies';
 import Blog from './Blog';
-import About from '../components/About';
 import GithubContibutionGraph from '../components/GithubContributionGraph';
 import InteractiveUi from '../components/InteractiveUi';
 
 const Home = () => {
   return (
     <> 
-      <div className='dark-striped-background '>
+      <div className='bg-gradient-to-tr from-blue-900 to-blue-900'>
         <Hero />
          <div className='md:mx-60'>
            <InteractiveUi />
@@ -21,6 +19,7 @@ const Home = () => {
         <GithubContibutionGraph />
         <Cards />
         <Experience />
+        <Project />
         <Partners />
         <Blog />
       </div>
