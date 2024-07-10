@@ -6,7 +6,7 @@ import "../css/hero.css";
 
 const slidesData = [
   {
-    className: "slide-1",
+    className: "slide-1 ",
     heading: "Hey there, I am Austin Obimbo",
     texts: [
       "Certified Software Engineer",
@@ -15,7 +15,7 @@ const slidesData = [
     ],
   },
   {
-    className: "slide-1",
+    className: "slide-1 ",
     heading: "Welcome to My Portfolio",
     texts: [
       "Experienced in Various Technologies",
@@ -25,7 +25,7 @@ const slidesData = [
     ],
   },
   {
-    className: "slide-2",
+    className: "slide-2 ",
     heading: "Collaborator and Team Builder",
     texts: [
       "A remote pair programmer",
@@ -35,7 +35,7 @@ const slidesData = [
     ],
   },
   {
-    className: "slide-2",
+    className: "slide-2 ",
     heading: "Agile Software Engineer",
     texts: [
       "A Natural Sense of Attention to Detail",
@@ -45,7 +45,7 @@ const slidesData = [
     ],
   },
   {
-    className: "slide-2",
+    className: "slide-2 ",
     heading: "Data Driven",
     texts: [
       "Experienced in Data Analysis and Interpretation",
@@ -107,7 +107,7 @@ const Hero = () => {
           key={index}
           className={`hero-slide ${slide.className}`}
         >
-          <div className="hero-content">
+          <div className="hero-content bg-blue-900 rounded-xl shadow-3xl 0">
             <h2 className="hero-heading">{slide.heading}</h2>
             <div>
               {slide.texts.map((text, idx) => (
