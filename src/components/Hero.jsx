@@ -56,13 +56,7 @@ const slidesData = [
   },
 ];
 
-const SocialLinks = () => {
-  return(
-    <>
-      <div></div>
-    </>
-  )
-}
+
 const Hero = () => {
   var settings = {
     dots: true,
@@ -112,8 +106,9 @@ const Hero = () => {
             <div>
               {slide.texts.map((text, idx) => (
                 <h3 key={idx} className="hero-text">{text}</h3>
-              ))}
+              ))}       
             </div>
+            
           </div>
         </div>
       ))}

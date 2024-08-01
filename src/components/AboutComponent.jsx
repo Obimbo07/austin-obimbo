@@ -7,11 +7,16 @@ const AboutComponent = () => {
   return (
     <>
       <div className="bg-grey-300 sm:flex">
-        <div className='p-4 flex flex-col gap-2 shadow-full'>
+        <div className=' flex flex-col gap-2 shadow-full'>
+           <img 
+              src='technology.jpg' 
+              alt="Austine obimbo at home work-space"
+              className='h-32'
+            />
            <img 
               src='at_office.jpg' 
               alt="Austine obimbo at home work-space"
-              className='about-office-img rounded-3xl about-img'
+              className='absolute rounded-full w-40 top-5 left-40'
            />
            <div>
            <a
