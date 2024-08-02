@@ -3,6 +3,15 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCode, faDatabase, faBug, faDraftingCompass, faUsers, faHandshake } from '@fortawesome/free-solid-svg-icons';
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card"
+import { Link } from 'react-router-dom';
 
 const Cards = () => {
   const { ref, inView } = useInView({ triggerOnce: false, threshold: 0.1 });
@@ -63,18 +72,35 @@ const Cards = () => {
         {cardData.map((card, index) => (
           <motion.div
             key={index}
-            className="bg-neutral-700 rounded-lg shadow-md p-4 transition-transform transform hover:-translate-y-2 hover:shadow-xl hover:bg-blue-900"
+            className=" rounded-lg p-4 transition-transform transform hover:-translate-y-2 hover:shadow-xl hover:bg-blue-900"
             initial={{ opacity: 0, y: 50 }}
             animate={animation}
           >
-            <div className="flex justify-center items-center h-40">
+          <Card className="shadow-2xl group">
+            <CardHeader className="items-center text-white group-hover:text-green-700 group-hover::text-2xl">
+              <CardTitle>
+              <FontAwesomeIcon icon={card.icon} className="text-6xl  transition-transform transform hover:scale-110"/>
+              </CardTitle>
+              <CardDescription className="text-center text-white text-3xl ">
+              {card.title}
+              </CardDescription>
+            </CardHeader>
+            <CardContent className="text-white">
+              {card.description}
+            </CardContent>
+            <CardFooter className='flex'>
+              <Link className='bg-green-400 p-4 align-center' to="/contact">Request Quote</Link>
+            </CardFooter>
+          </Card>
+
+            {/* <div className="flex justify-center items-center h-40">
               <FontAwesomeIcon icon={card.icon} className="text-6xl text-blue-500 transition-transform transform hover:scale-110 hover:text-blue-700" />
             </div>
             <div className="flex justify-between items-center pt-4">
               <h3 className="text-lg font-semibold transition-colors duration-300 text-neutral-100 hover:text-blue-700">{card.title}</h3>
               <button href="#Contact" className="text-blue-500 hover:text-blue-700">Learn More</button>
             </div>
-            <p className="text-neutral-100 pt-2">{card.description}</p>
+            <p className="text-neutral-100 pt-2">{card.description}</p> */}
           </motion.div>
         ))}
       </div>
