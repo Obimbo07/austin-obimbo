@@ -7,12 +7,14 @@ import Partners from '../components/Partners';
 import Blog from './Blog';
 import GithubContibutionGraph from '../components/GithubContributionGraph';
 import InteractiveUi from '../components/InteractiveUi';
+import AboutComponent from '../components/AboutComponent';
 
 const Home = () => {
   return (
     <> 
       <div className='bg-gradient-to-tr from-blue-900 to-blue-900'>
         <Hero />
+        <AboutComponent />
          <div className='md:mx-60'>
            <InteractiveUi />
          </div>

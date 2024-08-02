@@ -1,22 +1,21 @@
 import { faLink } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import React from 'react'
 
 const AboutComponent = () => {
   
   return (
     <>
-      <div className="bg-grey-300 sm:flex">
-        <div className=' flex flex-col gap-2 shadow-full'>
+      <div className="bg-grey-300 sm:flex md:flex-col">
+        <div className='flex w-full flex-col gap-2 shadow-full'>
            <img 
               src='technology.jpg' 
               alt="Austine obimbo at home work-space"
-              className='h-32'
+              className='h-48  md:h-80'
             />
            <img 
-              src='at_office.jpg' 
+              src='rename.jpg' 
               alt="Austine obimbo at home work-space"
-              className='absolute rounded-full w-40 top-5 left-40'
+              className='absolute rounded-full w-40 inset-x-1/3 md:right-10 md:w-60'
            />
            <div>
            <a
@@ -30,6 +29,8 @@ const AboutComponent = () => {
             </a>
            </div>
         </div>
+
+
         <div className="p-6 flex flex-col justify-center">
           <h2 className="text-3xl  text-start text-white font-bold mt-4 mb-4">
             I'm Austin Obimbo.I live in Mombasa Kenya where I build the future.
