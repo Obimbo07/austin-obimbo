@@ -7,7 +7,6 @@ import Contact from './Contact';
 const Footer = () => {
   return (
     <>
-      <Contact />
       <footer id="Contact" className="bg-gray-900 text-white py-16 px-8">
         <div className="flex flex-col items-center">
           <img src="passport.jpg" alt="Logo" className="w-28 mb-8 rounded-full" />

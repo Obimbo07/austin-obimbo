@@ -8,6 +8,7 @@ import Projects from './pages/Projects';
 import Blog from './pages/Blog';
 import Footer from './components/Footer';
 import Technologies from './components/Technologies';
+import Contact from './components/Contact';
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
         <Route path="/technologies" element={<Technologies />} />
         <Route path="/certifications" element={<Certifications />} />
         <Route path="/publications" element={<Blog /> } />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
       <Footer />
     </div>

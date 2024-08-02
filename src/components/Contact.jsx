@@ -7,7 +7,7 @@ const Contact = () => {
         return alert('Thank you!! I will reach out to you shortly')
     }
     return (
-        <div className='w-full  mb-10 md:mb-0 p-4 bg-inherit md:flex justify-center'>
+        <div className='w-full  mb-10 md:mb-0 p-4 md:flex justify-center'>
         <div className='md:w-1/3'>
             <h3 className="text-4xl font-semibold mb-4 font-sans">Get In Touch</h3>
             <p className="text-gray-800 mb-6 text-4xl font-sans">

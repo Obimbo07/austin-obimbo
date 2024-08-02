@@ -1,5 +1,7 @@
 import { faLink } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
+
 
 const AboutComponent = () => {
   
@@ -12,11 +14,15 @@ const AboutComponent = () => {
               alt="Austine obimbo at home work-space"
               className='h-48  md:h-80'
             />
-           <img 
+           {/* <img 
               src='rename.jpg' 
               alt="Austine obimbo at home work-space"
               className='absolute rounded-full w-40 inset-x-1/3 md:right-10 md:w-60'
-           />
+           /> */}
+           <Avatar className='absolute rounded-full w-40 h-auto inset-x-1/3 md:inset-x-1/2 md:right-10 md:w-60'>
+              <AvatarImage src="rename.jpg" />
+              <AvatarFallback>Austin</AvatarFallback>
+           </Avatar>
            <div>
            <a
               href="https://docs.google.com/document/d/16JNuFYkcSz5_eDSnlnAezV_bU9NClhMa/edit?usp=sharing&ouid=107251804543803193655&rtpof=true&sd=true"
@@ -32,10 +38,10 @@ const AboutComponent = () => {
 
 
         <div className="p-6 flex flex-col justify-center">
-          <h2 className="text-3xl  text-start text-white font-bold mt-4 mb-4">
+          <h2 className="text-3xl  text-start sm:text-center text-white font-bold mt-4 mb-4">
             I'm Austin Obimbo.I live in Mombasa Kenya where I build the future.
           </h2>
-          <p className='text-start text-white text-mono text-lg mb-4'>
+          <p className='text-start md:text-center text-white text-mono text-lg mb-4'>
             I am a proactive full-stack software developer with love of growing my career,
             currently pursuing my a Bachelors degree in Information Technology. As professional data analysts I make data-driven
             decisions for product profitability and scalability. I design user-centric interfaces and wonderful user experiences, 

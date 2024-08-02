@@ -8,6 +8,7 @@ import Blog from './Blog';
 import GithubContibutionGraph from '../components/GithubContributionGraph';
 import InteractiveUi from '../components/InteractiveUi';
 import AboutComponent from '../components/AboutComponent';
+import Contact from '../components/Contact';
 
 const Home = () => {
   return (
@@ -24,6 +25,7 @@ const Home = () => {
         <Project />
         <Partners />
         <Blog />
+        <Contact />
       </div>
     </>
   )
