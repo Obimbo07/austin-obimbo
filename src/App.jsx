@@ -12,7 +12,7 @@ import Contact from './components/Contact';
 
 const App = () => {
   return (
-    <div>
+    <div className="bg-gradient-to-br from-gray-900 to-blue-900">
      <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
