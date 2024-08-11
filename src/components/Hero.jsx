@@ -60,10 +60,10 @@ const slidesData = [
 const Hero = () => {
   var settings = {
     dots: true,
-    speed: 500,
+    speed: 200,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplaySpeed: 5000,
+    autoplaySpeed: 3000,
     autoplay: true,
     initialSlide: 0,
     responsive: [
