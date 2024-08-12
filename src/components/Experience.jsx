@@ -8,6 +8,13 @@ const experience = [
     description: 'Work on 30+ projects as a Full stack developer.I collaboratively spent 3000+ hours remotely understanding algorithms and data structures using techonologies i.e Ruby on rails , React (NextJs & Vite), and React Native.',
     date: 'Feb 14th 2023 - Present',
   },
+  {
+    index: 2,
+    workTitle: 'Freelance Software Engineer',
+    workLocation: 'Remote',
+    description: 'Helped 20+ NGO and non-profits improve thier technological advancements by doing pro-bono and low-bono projects. I worked with a broad range of technologies including WordPress, CMS, Ai tools. This helpes improve the organizations profile and output.',
+    date: 'August 2024  - Present',
+  },
   
 ];
 

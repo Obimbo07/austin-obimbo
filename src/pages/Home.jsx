@@ -9,12 +9,13 @@ import GithubContibutionGraph from '../components/GithubContributionGraph';
 import InteractiveUi from '../components/InteractiveUi';
 import AboutComponent from '../components/AboutComponent';
 import Contact from '../components/Contact';
+import Carousel from '../components/Carousel';
 
 const Home = () => {
   return (
     <> 
       <div className='bg-gradient-to-tr from-blue-900 to-blue-900'>
-        <Hero />
+        <Carousel />
         <AboutComponent />
          <div className='md:mx-60'>
            <InteractiveUi />
