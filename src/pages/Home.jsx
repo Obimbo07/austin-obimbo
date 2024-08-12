@@ -7,21 +7,20 @@ import Partners from '../components/Partners';
 import Blog from './Blog';
 import GithubContibutionGraph from '../components/GithubContributionGraph';
 import InteractiveUi from '../components/InteractiveUi';
-import AboutComponent from '../components/AboutComponent';
 import Contact from '../components/Contact';
 import Carousel from '../components/Carousel';
+import AboutText from '../components/AboutText';
 
 const Home = () => {
   return (
     <> 
       <div className='bg-gradient-to-tr from-blue-900 to-blue-900'>
         <Carousel />
-        <AboutComponent />
+        <AboutText />
          <div className='md:mx-60'>
            <InteractiveUi />
          </div>
         <GithubContibutionGraph />
-        <Cards />
         <Experience />
         <Project />
         <Partners />
