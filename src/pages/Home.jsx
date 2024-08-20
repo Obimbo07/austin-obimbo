@@ -10,26 +10,39 @@ import InteractiveUi from '../components/InteractiveUi';
 import Contact from '../components/Contact';
 import Carousel from '../components/Carousel';
 import AboutText from '../components/AboutText';
-
+import Navbar from '../components/Navbar';
+import { DNA } from 'react-loader-spinner';
 const Home = () => {
-  const [loading, setLoading] = useState(true);
+  const [isloading, setIsloading] =  useState(true)
 
-  useEffect(() => {
-    // Simulate a loading delay for demonstration
+  useState(() => {
     const timer = setTimeout(() => {
-      setLoading(false);
-    }, 3000); // Adjust the delay as needed
-
+      setIsloading(false);
+    }, 3000);
     return () => clearTimeout(timer);
   }, []);
 
+  if (isloading) {
+    return (
+      <>
+        <div className="h-screen flex items-center justify-center">
+          <DNA
+            visible={true}
+            height="200"
+            width="200"
+
+            ariaLabel="dna-loading"
+            wrapperStyle={{}}
+            wrapperClass="dna-wrapper"
+          />
+        </div>
+      </>
+    );
+  }
   return (
     <>
-      <div className='bg-gradient-to-tr from-blue-900 to-blue-900'>
-        {loading ? (
-          <div className='loader'></div>
-        ) : (
-          <>
+     <Navbar />
+      <div className='bg-gradient-to-tr from-grey-900 to-blue-900'>
             <Carousel />
             <AboutText />
             <div className='md:mx-60'>
@@ -41,8 +54,6 @@ const Home = () => {
             <Partners />
             <Blog />
             <Contact />
-          </>
-        )}
       </div>
     </>
   );

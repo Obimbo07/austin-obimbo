@@ -11,14 +11,8 @@ import Technologies from './components/Technologies';
 import Contact from './components/Contact';
 
 const App = () => {
-  const [loading, setLoading] = useState(true)
-
-  useEffect(() => {
-    const timer 
-  })
   return (
     <div className="bg-gradient-to-br from-gray-900 to-blue-900">
-     <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
@@ -28,7 +22,6 @@ const App = () => {
         <Route path="/publications" element={<Blog /> } />
         <Route path="/contact" element={<Contact />} />
       </Routes>
-      <Footer />
     </div>
   );
 };
