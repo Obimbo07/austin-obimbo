@@ -1,9 +1,11 @@
 .slide-1 {
     background-image: url('/vision.jpg');
+    background-size: cover;
   }
   
 .slide-2 {
-    background-image: url('/IMG_3892.jpg');
+  background-image: url('/IMG_3892.jpg');
+  background-size: cover;
 }
 
 .passport-conn {

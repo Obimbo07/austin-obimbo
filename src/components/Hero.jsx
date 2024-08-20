@@ -56,20 +56,14 @@ const slidesData = [
   },
 ];
 
-const SocialLinks = () => {
-  return(
-    <>
-      <div></div>
-    </>
-  )
-}
+
 const Hero = () => {
   var settings = {
     dots: true,
-    speed: 500,
+    speed: 200,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplaySpeed: 5000,
+    autoplaySpeed: 3000,
     autoplay: true,
     initialSlide: 0,
     responsive: [
@@ -112,8 +106,9 @@ const Hero = () => {
             <div>
               {slide.texts.map((text, idx) => (
                 <h3 key={idx} className="hero-text">{text}</h3>
-              ))}
+              ))}       
             </div>
+            
           </div>
         </div>
       ))}

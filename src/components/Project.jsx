@@ -14,8 +14,7 @@ const ProjectCard = ({ project }) => {
 
   return (
     <div className="flex flex-col sm:flex-row p-4 shadow-lg rounded-lg bg-white overflow-hidden">
-      <img className="w-full sm:w-1/2 h-48 object-cover" src={project.image} alt={project.name} />
-      
+      <img className="w-full sm:w-1/2 h-48 object-contain" src={project.image} alt={project.name} />
       <div className="px-4 py-2 bg-gray-100 flex-grow">
         <h3 className="text-lg font-bold text-blue-700 hover:text-blue-800">{project.name}</h3>
         <p className="text-sm text-gray-600 mb-2">{project.description.slice(0, 100)}...</p>
@@ -84,9 +83,9 @@ const Project = () => {
   return (
     <section className="container mx-auto px-4 py-8 bg-gradient-to-r from-blue-500 to-green-500">
       <div className='p-10 mx-auto'>
-        <h2 className="text-3xl font-bold text-white mb-4">MY RECENT PROJECTS</h2>
+        <h2 className="text-3xl font-bold text-white mb-4 sm:text-center">MY RECENT PROJECTS</h2>
         <hr className="border-t border-white mb-6" />
-        <div className='flex flex-wrap md:flex-nowrap  gap-4' {...settings}>
+        <div className='flex flex-wrap lg:flex-nowrap  gap-4' {...settings}>
           {recentProjects.map((project) => (
             <div key={project.name} className="px-2 w-fit">
               <ProjectCard project={project} />
@@ -102,7 +101,7 @@ const Project = () => {
       <div className='p-10 mx-auto'>
         <h2 className="text-4xl font-bold text-white mb-4 text-center">MY PROJECTS</h2>
         <hr className="border-t border-white mb-6" />
-        <div className='flex flex-wrap md:flex-nowrap  gap-4' {...settings}>
+        <div className='flex flex-wrap lg:flex-nowrap  gap-4' {...settings}>
           {otherProjects.map((project) => (
             <div key={project.name} className="px-2 w-fit">
               <ProjectCard project={project} />
