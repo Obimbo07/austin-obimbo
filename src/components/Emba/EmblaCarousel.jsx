@@ -30,44 +30,66 @@ const EmblaCarousel = (props) => {
   } = usePrevNextButtons(emblaApi)
 
   return (
-    <div className="embla">
+    <div className="embla relative">
       <div className="embla__viewport" ref={emblaRef}>
         <div className="embla__container">
-        {slides.map((slide, index) => (
-            <div className={`embla__slide bg-no-repeat  ${slide.className}`} key={index}>
-              <div className="bg-gradient-to-b from-grey-900 to-grey-100 rounded-xl p-4 absolute opacity-100 lg:inset-x-1/3 inset-y-1/3 h-fit w-max">
-                <h2 className="text-2xl font-bold mb-4 text-white">{slide.heading}</h2>
-                <ul className="list-none p-0">
-                  {slide.texts.map((text, i) => (
-                    <li key={i} className="flex items-center mb-2 p-2">
-                      <FontAwesomeIcon icon={faMedal} className="text-yellow-500 mr-3" />
-                      <span className='text-white'>{text}</span>
-                    </li>
-                  ))}
-                </ul>
+          {slides.map((slide, index) => (
+            <div
+              className={`embla__slide bg-no-repeat bg-cover ${slide.className}`}
+              key={index}
+            >
+              <div className="bg-gradient-to-b from-blue-500 to-blue-900 rounded-xl p-4 absolute opacity-60 inset-0 flex items-center justify-center">
+                <div className="text-center w-full max-w-md md:max-w-lg lg:max-w-xl mx-auto">
+                  <h2 className="text-5xl md:text-5xl font-bold mb-4 text-white">
+                    {slide.heading}
+                  </h2>
+                  <ul className="list-none p-0">
+                    {slide.texts.map((text, i) => (
+                      <li key={i} className="flex items-center  mb-2 p-4">
+                        <FontAwesomeIcon
+                          icon={faMedal}
+                          className="text-yellow-500 mr-3"
+                        />
+                        <span className="text-white text-xl md:text-base lg:text-lg">
+                          {text}
+                        </span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
               </div>
             </div>
           ))}
         </div>
       </div>
 
-      <div className="embla__controls">
-        <div className="embla__buttons">
-          <PrevButton onClick={onPrevButtonClick} disabled={prevBtnDisabled} />
-          <NextButton onClick={onNextButtonClick} disabled={nextBtnDisabled} />
-        </div>
+      <div className="embla__controls absolute bottom-4 flex w-full justify-center items-center">
+        {/* <div className="embla__buttons">
+          <PrevButton
+            onClick={onPrevButtonClick}
+            disabled={prevBtnDisabled}
+            className="mx-2"
+          />
+          <NextButton
+            onClick={onNextButtonClick}
+            disabled={nextBtnDisabled}
+            className="mx-2"
+          />
+        </div> */}
 
-        {/* <div className="embla__dots">
+        <div className="embla__dots">
           {scrollSnaps.map((_, index) => (
             <DotButton
               key={index}
               onClick={() => onDotButtonClick(index)}
-              className={'embla__dot'.concat(
-                index === selectedIndex ? ' embla__dot--selected' : ''
-              )}
+              className={
+                'embla__dot transition-colors duration-300 ease-in-out'.concat(
+                  index === selectedIndex ? ' bg-yellow-500' : ' bg-gray-400'
+                )
+              }
             />
           ))}
-        </div> */}
+        </div>
       </div>
     </div>
   )

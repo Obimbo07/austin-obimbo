@@ -10,7 +10,7 @@ const Footer = () => {
       <footer id="Contact" className=" md:rounded-3xl text-white md:mx-20 md:mt-2">
         <div className="flex flex-col items-center">
           <div className="relative">
-            <img src="logo.png" alt="Logo" className="w-15 h-auto rounded-full float-left mr-4" />
+            <img src="logo-shine.png" alt="Logo" className="w-20 h-auto rounded-full float-left mr-4" />
             <p className="text-center text-gray-100 font-serif max-w-2xl">
               Welcome to my website! Here you'll find insights about my projects, interests, and professional journey.
               Connect with me through the social links below and feel free to reach out if you have any questions or
