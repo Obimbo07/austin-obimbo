@@ -12,7 +12,7 @@ const experience = [
     index: 2,
     workTitle: 'Freelance Software Engineer',
     workLocation: 'Remote',
-    description: 'Helped 20+ NGO and non-profits improve thier technological advancements by doing pro-bono and low-bono projects. I worked with a broad range of technologies including WordPress, CMS, Ai tools. This helpes improve the organizations profile and output.',
+    description: 'Helping  NGO and non-profits improve thier technological advancements by doing pro-bono and low-bono projects. I worked with a broad range of technologies including WordPress, CMS, Ai tools. This helpes improve the organizations profile and output.',
     date: 'August 2024  - Present',
   },
   
@@ -21,7 +21,7 @@ const experience = [
 const achievements = [
   {
     index: 0,
-    title: 'Tech to the Rescue Zero Hunger Hackathon',
+    title: 'Won Tech to the Rescue Zero Hunger Hackathon',
     date: '22nd - 24th May 2024',
     description: 'Haba na Haba ussd application, a USSD-Based Surplus Food Distribution System, an innovative solution designed to combat food waste and improve food accessibility which connects surplus food providers with individuals in need through the use of Unstructured Supplementary Service Data (USSD) and Africa’s Talking API.',
     link: 'https://www.techtotherescue.org/hackathon/meet-the-winners/',
@@ -30,8 +30,8 @@ const achievements = [
 
 const Experience = () => {
   return (
-    <section className="experience-section p-4 m-4">
-      <div className="container mx-auto flex flex-col md:flex-row gap-10">
+    <section className="experience-section p-4 m-4 ">
+      <div className="container mx-auto flex flex-col md:flex-row gap-10 align-baseline">
         <div className="description-section flex flex-col justify-center w-full md:w-1/2 mb-4 md:mb-0 animate-slide-in-left">         
           <h2 className="text-3xl font-bold text-neutral-100 outline p-2 text-center md:text-center mb-4">Work History</h2>
           <p className="text-lg text-white mb-4 text-center">
