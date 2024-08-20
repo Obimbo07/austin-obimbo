@@ -9,7 +9,7 @@ const OPTIONS = { loop: true, duration: 5 }
 const Carousel = () => {
   return (
     <>
-      <div className=''>
+      <div>
          <EmblaCarousel slides={HeroData} options={OPTIONS} />
       </div>
     </>
