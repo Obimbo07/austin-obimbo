@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import Hero from '../components/Hero';
 import Cards from '../components/Cards';
-import Experience from '../components/Experience';
+
+
 import Project from '../components/Project';
 import Partners from '../components/Partners';
 import Blog from './Blog';
@@ -11,7 +12,10 @@ import Contact from '../components/Contact';
 import Carousel from '../components/Carousel';
 import AboutText from '../components/AboutText';
 import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
+
 import { DNA } from 'react-loader-spinner';
+
 const Home = () => {
   const [isloading, setIsloading] =  useState(true)
 
@@ -55,6 +59,7 @@ const Home = () => {
             <Blog />
             <Contact />
       </div>
+      <Footer />
     </>
   );
 }
