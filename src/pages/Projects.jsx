@@ -2,17 +2,9 @@ import React, { useState } from 'react'
 
 
 export const projects = [
-   {
-    name: 'Business management system',
-    description: 'The system allows Clients book services offered by the business. Workers are assigned to booked service by administrators. The system has inclusive Mpesa payment system to help collect payments from clients booked service which dispatches the commission to the worker too.The workers dashboard with a "Request cash out" button enables workers request commission earned from administrators.',
-    technologies: ['Ruby on Rails', 'Daraja API'],
-    image: 'business-managment.jpeg',
-    liveLink: '#',
-    sourceLink: 'https://github.com/Obimbo07/daraja-test',
-    },
     {
       name: 'Daraja test',
-      description: 'An implementation of Mpesa daraja Api stkquery and stkpush.',
+      description: 'An implementation of Ruby Mpesa daraja Api stkquery and stkpush.',
       technologies: ['Ruby on Rails', 'Daraja API'],
       image: 'daraja_mpesa.png',
       liveLink: '#',
@@ -20,15 +12,15 @@ export const projects = [
     },
     {
       name: 'Book Destination',
-      description: 'This Full stack application helps users reserve holiday, meeting and BNB destinations, in various places. Users have can perform CRUD operations on the destinations.',
+      description: 'This Full stack application helps users reserve holiday, meeting and BNB destinations, in various places. Users have can perform CRUD operations on the destinations, and schedule reservations',
       technologies: ['Ruby on Rails', 'React/Redux'],
       image: 'book_destination_logo.jpeg',
-      liveLink: 'https://www.olaycompany.com',
+      liveLink: '#',
       sourceLink: 'Not Sourced on Github',
     },
     {
       name: 'Budget App',
-      description: 'A more generic versioned Budget App, that includes transaction management features. A User authentication system using JWT authentication.',
+      description: 'A more generic versioned Budget App, that includes transaction management features. A User authentication system using JWT authentication. categorised budgets and transactions to be conducted upon each budget',
       image: 'budget-app.jpg',
       technologies: ['HTML', 'Bootstrap', 'Ruby on rails'],
       liveLink: 'https://example.com/project2',
@@ -78,6 +70,7 @@ export const projects = [
       name: 'Vet Clinic Database',
       description: 'Designed a clinical database to help manage patient records and clinical inventory',
       technologies: ['Ruby'],
+
       image: 'projects.png',
       liveLink: 'https://example.com/project1',
       sourceLink: 'https://Obimbo07/vet-clinic',
