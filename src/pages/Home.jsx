@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Hero from '../components/Hero';
 import Cards from '../components/Cards';
-
-
+import Experience from '../components/Experience';
 import Project from '../components/Project';
 import Partners from '../components/Partners';
 import Blog from './Blog';
