@@ -31,13 +31,13 @@ const achievements = [
 const Experience = () => {
   return (
     <section className="experience-section p-6">
-      <div className="container mx-auto flex flex-col md:flex-row gap-16">
+      <div className=" mx-auto flex flex-col md:flex-row gap-16">
         {/* Achievements Section */}
         <div className="description-section flex flex-col justify-center w-full md:w-1/2 mb-8 md:mb-0">
           <h2 className="text-4xl font-extrabold text-neutral-100 mb-8 text-center">Achievements</h2>
           <div className="timeline relative">
             {achievements.map((achievement, i) => (
-              <div key={achievement.index} className="relative pl-12 mb-12">
+              <div key={achievement.index} className="relative  mb-12">
                 {/* Line and dot */}
                 <div className="absolute left-6 top-0 h-full flex flex-col items-center">
                   {i !== achievements.length - 1 && (
