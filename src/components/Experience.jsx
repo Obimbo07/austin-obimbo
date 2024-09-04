@@ -31,6 +31,7 @@ const achievements = [
 const Experience = () => {
   return (
     <section className="experience-section p-6">
+
       <div className=" mx-auto flex flex-col md:flex-row gap-16">
         {/* Achievements Section */}
         <div className="description-section flex flex-col justify-center w-full md:w-1/2 mb-8 md:mb-0">

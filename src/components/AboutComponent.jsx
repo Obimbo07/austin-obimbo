@@ -29,7 +29,7 @@ const AboutComponent = () => {
               href="https://docs.google.com/document/d/16JNuFYkcSz5_eDSnlnAezV_bU9NClhMa/edit?usp=sharing&ouid=107251804543803193655&rtpof=true&sd=true"
               target="_blank" // This will open the link in a new tab
               rel="noopener noreferrer" // This is a security measure when using target="_blank"
-              className='bg-neutral-900 rounded-full text-white font-bold hover:text-blue-300 p-4 w-full flex items-center justify-center'
+              className='bg-neutral-900 rounded-full text-white font-bold hover:text-blue-300 p-4 m-4 w-full flex items-center justify-center'
             >
               Get Resume
               <FontAwesomeIcon icon={faLink} className='ml-2' />
