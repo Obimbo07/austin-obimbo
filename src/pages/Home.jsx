@@ -44,7 +44,6 @@ const Home = () => {
   }
   return (
     <>
-     <Navbar />
       <div className='bg-gradient-to-tr from-grey-900 to-blue-900'>
             <Carousel />
             <AboutText />
@@ -58,7 +57,6 @@ const Home = () => {
             <Blog />
             <Contact />
       </div>
-      <Footer />
     </>
   );
 }
