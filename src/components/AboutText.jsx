@@ -6,7 +6,7 @@ const AboutText = () => {
     <>
       <div className="px-4 py-8 flex flex-col md:flex-row items-center justify-center bg-slate-950 w-full text-serif space-y-6 md:space-y-0 md:space-x-8">
         {/* Image Section with Overlay */}
-        <div className="relative w-full md:w-1/5 lg:w-1/5 h-20">
+        <div className="relative w-full md:w-1/5 lg:w-1/5 h-auto">
           <div className="relative group">
             <Image
               src="/new_passport.jpg"
