@@ -38,14 +38,14 @@ const EmblaCarousel = (props) => {
               className={`embla__slide bg-no-repeat bg-cover ${slide.className}`}
               key={index}
             >
-              <div className="bg-gradient-to-br from-slate-950 to-blue-900 rounded-xl p-4 absolute opacity-80 inset-0 flex items-center justify-center">
+              <div className="bg-gradient-to-b from-slate-950 to-blue-900 rounded-xl p-4 absolute opacity-90 inset-0 flex items-center justify-center">
                 <div className="text-center w-full max-w-md md:max-w-lg lg:max-w-xl mx-auto">
                   <h2 className="text-5xl md:text-5xl font-bold mb-4 text-white">
                     {slide.heading}
                   </h2>
                   <ul className="list-none p-0">
                     {slide.texts.map((text, i) => (
-                      <li key={i} className="flex items-center bg-blue-900 opacity-90 mb-2 p-4">
+                      <li key={i} className="flex items-center bg-blue-900 mb-2 p-4">
                         <FontAwesomeIcon
                           icon={faMedal}
                           className="text-yellow-500 mr-3"
