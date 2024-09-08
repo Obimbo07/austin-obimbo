@@ -74,6 +74,14 @@ export const projects = [
       liveLink: 'https://github.com/Obimbo07/vet-clinic',
       sourceLink: 'https://github.com/Obimbo07/vet-clinic',
     },
+    {
+      name: 'Vet Clinic Database',
+      description: 'Designed a clinical database to help manage patient records and clinical inventory',
+      technologies: ['Ruby'],
+      image: 'projects.png',
+      liveLink: 'https://github.com/Obimbo07/vet-clinic',
+      sourceLink: 'https://github.com/Obimbo07/vet-clinic',
+    },
 ];
 
 export const ProjectCard = ({ project }) => {
@@ -108,6 +116,7 @@ export const ProjectCard = ({ project }) => {
     return (
       <div className="fixed inset-0 z-50 bg-gray-500/50 flex justify-center items-center">
         <div className="w-full max-w-lg rounded-lg bg-white p-4 shadow-md">
+           <img className="w-1/2 h-48 grow object-fill" src={project.image} alt={project.name} />
           <h2 className="text-xl font-bold text-blue-700 mb-4">{project.name}</h2>
           <p className="text-gray-700">{project.description}</p>
           <div className="flex justify-between mt-4">

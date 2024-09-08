@@ -101,9 +101,9 @@ const Project = () => {
       <div className='p-10 mx-auto'>
         <h2 className="text-4xl font-bold text-white mb-4 text-center">MY PROJECTS</h2>
         <hr className="border-t border-white mb-6" />
-        <div className='flex flex-wrap lg:flex-nowrap  gap-4' {...settings}>
+        <div className='flex flex-wrap '>
           {otherProjects.map((project) => (
-            <div key={project.name} className="px-2 w-fit">
+            <div key={project.name} className="px-2 md:w-1/2 mb-10  md:flex-wrap ">
               <ProjectCard project={project} />
             </div>
           ))}
