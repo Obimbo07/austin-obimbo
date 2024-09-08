@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Hero from '../components/Hero';
 import Cards from '../components/Cards';
-
-
+import Experience from '../components/Experience';
 import Project from '../components/Project';
 import Partners from '../components/Partners';
 import Blog from './Blog';
@@ -45,7 +44,6 @@ const Home = () => {
   }
   return (
     <>
-     <Navbar />
       <div className='bg-gradient-to-tr from-grey-900 to-blue-900'>
             <Carousel />
             <AboutText />
@@ -59,7 +57,6 @@ const Home = () => {
             <Blog />
             <Contact />
       </div>
-      <Footer />
     </>
   );
 }
