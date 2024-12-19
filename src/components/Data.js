@@ -1,5 +1,32 @@
 import { faGithub, faLinkedin, faMedium, faTwitter } from '@fortawesome/free-brands-svg-icons';
 
+export const experience = [
+  {
+    index: 1,
+    workTitle: 'Self Employed',
+    workLocation: 'Remote',
+    description: 'Worked on 30+ projects as a Full stack developer. Spent 3000+ hours remotely understanding algorithms and data structures using technologies like Ruby on Rails, React (Next.js & Vite), and React Native.',
+    date: 'Feb 14th 2023 - Present',
+  },
+  {
+    index: 2,
+    workTitle: 'Freelance Software Engineer',
+    workLocation: 'Remote',
+    description: 'Helped NGOs and non-profits improve their technological advancements by doing pro-bono and low-bono projects. Worked with technologies like WordPress, CMS, and AI tools to enhance their profiles and output.',
+    date: 'August 2024 - Present',
+  }
+];
+
+export const achievements = [
+  {
+    index: 0,
+    title: 'Won Tech to the Rescue Zero Hunger Hackathon',
+    date: '22nd - 24th May 2024',
+    description: 'Developed a USSD-Based Surplus Food Distribution System to combat food waste and improve food accessibility using USSD and Africa’s Talking API.',
+    link: 'https://www.techtotherescue.org/hackathon/meet-the-winners/',
+  },
+  
+];
 
 export const socials = [
    {
