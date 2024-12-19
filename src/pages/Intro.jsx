@@ -8,69 +8,153 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import '../css/images.css'
+import InteractiveUi from "../components/InteractiveUi";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowAltCircleUp, faArrowRightToFile, faCertificate } from "@fortawesome/free-solid-svg-icons";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion"
+import Experience from "../components/Experience";
+import GitHubContributionGraph from "../components/GithubContributionGraph";
+import Exp from "../components/exp";
+import Achv from "../components/Achv";
+import { Link } from "react-router-dom";
 
 const Intro = () => {
   return (
-    <div className="bg-[#f8f2f0] min-h-screen p-4">
+    <div className="bg-[#f8f2f0] bg-gray-400 min-h-screen p-4">
       {/* Grid Layout for Desktop */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full max-w-6xl mx-auto">
         {/* Left Section */}
-        <div className="flex gap-2">
-            <div className="flex flex-none flex-col w-2/3 justify-center items-start gap-4 p-8 rounded-3xl bg-white shadow-lg">
-                <h2 className="text-3xl md:text-4xl font-bold leading-tight">
-                    Design<br />
-                    Development <br />
-                    <span className="text-pink-500">Architecture</span>
-                </h2>
-                <p className="text-gray-600">
-                    Austin Obimbo is an innovative software developer who creates
-                    architecture redefining modern living spaces.
-                </p>
-                <button className="bg-orange-500 hover:p-4 rounded-full text-white py-2 px-4">
-                    Contact me
-                </button>
+        <div>
+            <div className="flex gap-2">
+                <div className="flex flex-none flex-col w-2/3 justify-center items-start gap-4 p-8 rounded-3xl bg-white shadow-lg">
+                    <h2 className="text-3xl md:text-4xl font-bold leading-tight">
+                        Design<br />
+                        Development <br />
+                        <span className="text-pink-500">Architecture</span>
+                    </h2>
+                    <p className="text-gray-600">
+                        Austin Obimbo is an innovative software developer who creates
+                        architecture redefining modern living spaces.
+                    </p>
+                    <button className="bg-orange-500 hover:p-4 rounded-full text-white py-2 px-4">
+                        Contact me
+                    </button>
+                </div>
+                <div className="at-office flex-1 rounded-3xl">
+                  <h1 className="text-white text-3xl font-extrabold text-center"></h1>
+                </div>
             </div>
-            <div className="at-office flex-1 rounded-3xl">
-
+            <div className="flex flex-none flex-col md:flex-row justify-center items-start gap-4 py-8 rounded-3xl">
+                <div className="flex flex-none flex-col w-full md:w-1/2 justify-center items-start gap-4 p-8 rounded-3xl bg-white shadow-lg">
+                  <p className="text-gray-600 text-sm font-extrabold">
+                  "I believe in the value of learning through practical application and am dedicated to consistently refining my technological skills..."
+                  </p>
+                </div>
+                <Link to="/projects" className="flex flex-none toolbox  hover:opacity-100 opacity-70 size-40  flex-col w-full md:w-1/2 justify-center items-start gap-4 p-12 rounded-3xl shadow-lg outline outline-1  outline-offset-2 outline-neutral-100">
+                   <p className="text-3xl md:text-4xl text-white font-bold leading-tight opacity-100">Projects</p>
+                </Link>
             </div>
         </div>
+    
+        
+        
         
 
         {/* Right Section */}
         <div className="grid gap-4">
-          {/* Top Image */}
-          <div className="rounded-3xl h-48 bg-blue-800 flex justify-center items-center">
-            <img
-              src="/images/profile-placeholder.jpg"
-              alt="Profile"
-              className="rounded-full w-36 h-36 object-cover"
-            />
+          
+          <div className="rounded-3xl shadow-lg bg-white h-auto flex flex-col">
+              <div className="flex justify-between p-8">
+                <h1 className="text-3xl md:text-4xl font-bold leading-tight">Austin Obimbo</h1>
+                 <a href='https://docs.google.com/document/d/16JNuFYkcSz5_eDSnlnAezV_bU9NClhMa/edit?usp=sharing&ouid=107251804543803193655&rtpof=true&sd=true' target="_blank" className="rounded-2xl shadow-2xl size-40 md:size-52 hover:size-44 resume flex items-end justify-center text-center text-3xl opacity-70 outline outline-1  outline-offset-2 outline-neutral-100" className="bg-orange-600 p-4 gap-2 rounded-full text-white">
+                   Get Resume
+                  <FontAwesomeIcon className="px-2" icon={faArrowRightToFile} />
+                 </a>
+              </div>
+             <div className="w-full my-8 opacity-70">
+                <div className="booking-image p-8 mx-4 rounded-3xl">
+                <h1 className="text-3xl md:text-4xl text-white font-bold leading-tight">
+                  Austin's Gallery
+                </h1>
+                </div>
+             </div>
+             <div className="w-full my-8 p px-8">
+              <Accordion type="single" collapsible>
+                <AccordionItem value="item-1">
+                  <AccordionTrigger className="">
+                    <p 
+                      className="font-extrabold text-orange-500 text-center text-3xl">
+                      Work Experience
+                      </p>
+                  </AccordionTrigger>
+                  <AccordionContent className="">
+                    <Exp />
+                  </AccordionContent>
+                </AccordionItem>
+              </Accordion>
+              <Accordion type="single" collapsible>
+                <AccordionItem value="item-2">
+                  <AccordionTrigger className="">
+                    <p 
+                      className="font-extrabold text-orange-500 text-center text-3xl">
+                      Achievements
+                      </p>
+                  </AccordionTrigger>
+                  <AccordionContent>
+                    <Achv />
+                  </AccordionContent>
+                </AccordionItem>
+              </Accordion>
+
+             </div>
+          </div>
+        </div>
+        
           </div>
           {/* Card Grid */}
-          <div className="grid grid-cols-2 gap-4">
-            <Card className="rounded-3xl bg-pink-200 p-4">
+      <div>
+      <div className="w-full">
+            <GitHubContributionGraph />
+            {/* <div className="grid grid-cols-2 gap-4 ">
+          
+            <Card className="rounded-3xl bg-gray-800 text-white p-4">
               <CardContent className="p-2">
-                <p>Muse</p>
+              <Accordion type="single" collapsible>
+                <AccordionItem value="item-2">
+                  <AccordionTrigger>Is it accessible?</AccordionTrigger>
+                  <AccordionContent>
+                    Yes. It adheres to the WAI-ARIA design pattern.
+                    
+                  </AccordionContent>
+                </AccordionItem>
+              </Accordion>
               </CardContent>
             </Card>
-            <Card className="rounded-3xl bg-pink-200 p-4">
-              <CardContent className="p-2">
-                <p>Blan</p>
+            <Card className="rounded-3xl w-fit bg-gray-800 text-white p-4">
+              <CardContent className="p-2 ">
+                <FontAwesomeIcon icon={faCertificate} />
+                <p>Certifications</p>
               </CardContent>
             </Card>
-            <Card className="rounded-3xl bg-pink-200 p-4">
+            <Card className="rounded-3xl bg-gray-800 text-white p-4">
               <CardContent className="p-2">
-                <p>Verve</p>
+                <p>FFF</p>
               </CardContent>
             </Card>
-            <Card className="rounded-3xl bg-pink-200 p-4">
+            <Card className="rounded-3xl bg-gray-800 text-white p-4">
               <CardContent className="p-2">
                 <p>Zephyr</p>
               </CardContent>
             </Card>
-          </div>
+          </div> */}
         </div>
       </div>
+      
 
       {/* Footer Links */}
       <div className="flex justify-center gap-6 mt-6">
