@@ -13,10 +13,11 @@ import Intro from './pages/Intro';
 
 const App = () => {
   return (
-    <div className="">
+    <div className="bg-gray-400 py-4">
      <Navbar />
       <Routes>
         <Route path="/" element={<Intro />} />
+        <Route path="/home" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/technologies" element={<Technologies />} />
