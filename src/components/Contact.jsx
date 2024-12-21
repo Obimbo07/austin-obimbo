@@ -7,15 +7,15 @@ const Contact = () => {
         return alert('Thank you!! I will reach out to you shortly')
     }
     return (
-        <div className='w-full  mb-10 md:mb-0 p-4 md:flex justify-center'>
-        <div className='md:w-1/3 text-white'>
+        <div className='bg-white shadow-lg rounded-3xl mx-4 my-4 md:mx-44 mb-10 md:mb-0 p-4 md:flex justify-center'>
+        <div className='md:w-1/3 text-black p-2'>
             <h3 className="text-4xl font-semibold mb-4 font-sans">Get In Touch</h3>
             <p className=" mb-6 text-4xl font-sans">
             I'm always interested in hearing about new projects, so if you'd like
             to chat, please get in touch.
-            </p>
+            </p> 
         </div>
-        <form onSubmit={handleSubmit} className=''>
+        <form onSubmit={handleSubmit} >
         <input
             type="text"
             name="name"
@@ -43,7 +43,7 @@ const Contact = () => {
         <textarea
             name="message"
             placeholder="Your Message"
-            className="w-full mb-2 rounded-md h-24 border border-gray-700 bg-gray-800 px-4 py-2 text-white focus:border-blue-500 focus:outline-none"
+            className="w-full mb-2 rounded-md h-24 border border-gray-700 bg-gray-600 px-4 py-2 text-white focus:border-blue-500 focus:outline-none"
             required
         />
         <ValidationError 
@@ -53,7 +53,7 @@ const Contact = () => {
         />
         <button
             type="submit"
-            className="w-full bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-700 transition ease-in-out duration-500"
+            className="w-full bg-green-900 hover:bg-red-900 text-white font-bold py-2 px-4 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-700 transition ease-in-out duration-500"
             disabled={state.submitting}
         >
             Send Message
