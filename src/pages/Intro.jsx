@@ -23,6 +23,7 @@ import Exp from "../components/exp";
 import Achv from "../components/Achv";
 import { Link } from "react-router-dom";
 
+
 const Intro = () => {
   return (
     <div className="bg-[#f8f2f0] bg-gray-400 min-h-screen p-4">
@@ -41,9 +42,16 @@ const Intro = () => {
                         Austin Obimbo is an innovative software developer who creates
                         architecture redefining modern living spaces.
                     </p>
-                    <button className="bg-orange-500 hover:p-4 rounded-full text-white py-2 px-4">
+                    <div className=" flex justify-between w-full ">
+                        
+                        <Link href='https://docs.google.com/document/d/16JNuFYkcSz5_eDSnlnLinkezV_bU9NClhMa/edit?usp=sharing&ouid=107251804543803193655&rtpof=true&sd=true' target="_blank" className="bg-orange-500 hover:p-4 rounded-full text-white py-2 px-4">
+                         Get Resume
+                       </Link>
+                       <Link to="/contact" className="bg-orange-500 hover:p-4 rounded-full text-white py-2 px-4">
                         Contact me
-                    </button>
+                       </Link>
+                     
+                    </div>
                 </div>
                 <div className="at-office flex-1 rounded-3xl">
                   <h1 className="text-white text-3xl font-extrabold text-center"></h1>
@@ -55,8 +63,8 @@ const Intro = () => {
                   "I believe in the value of learning through practical application and am dedicated to consistently refining my technological skills..."
                   </p>
                 </div>
-                <Link to="/projects" className="flex flex-none toolbox  hover:opacity-100 opacity-70 size-40  flex-col w-full md:w-1/2 justify-center items-start gap-4 p-12 rounded-3xl shadow-lg outline outline-1  outline-offset-2 outline-neutral-100">
-                   <p className="text-3xl md:text-4xl text-white font-bold leading-tight opacity-100">Projects</p>
+                <Link to="/projects" className="flex  flex-none toolbox  hover:opacity-100 opacity-70 size-40  flex-col w-full md:w-1/2 justify-center items-start gap-4 p-12 rounded-3xl shadow-lg outline outline-1  outline-offset-2 outline-neutral-100">
+                   <p className="text-3xl md:text-4xl bottom-0 text-white font-bold leading-tight opacity-100">Projects</p>
                 </Link>
             </div>
         </div>
@@ -76,8 +84,8 @@ const Intro = () => {
                   <FontAwesomeIcon className="px-2" icon={faArrowRightToFile} />
                  </a>
               </div>
-             <div className="w-full my-8 opacity-70">
-                <div className="booking-image p-8 mx-4 rounded-3xl">
+             <div className="w-full">
+                <div className="booking-image p-12 mx-8 rounded-3xl">
                 <h1 className="text-3xl md:text-4xl text-white font-bold leading-tight">
                   Austin's Gallery
                 </h1>
