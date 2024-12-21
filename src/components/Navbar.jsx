@@ -6,8 +6,8 @@ import { faHome, faUser, faCertificate, faProjectDiagram, faFileAlt, faEnvelope 
 const Navbar = () => {
   return (
     <>
-      <nav className="navigation-content md:sticky md:top-0 md:mx-44 rounded-3xl md:px-4">
-        <ul className="flex flex-row flex-wrap sm:flex-row sm:space-x-10  justify-center gap-8">
+      <nav className="navigation-content mx-4 md:sticky md:top-0 md:mx-40 rounded-3xl md:px-4">
+        <ul className="flex flex-row flex-wrap sm:flex-row sm:space-x-10  justify-evenly gap-8">
           <li>
             <Link to="/" className="text-white hover:text-gray-200 flex  md:flex-col items-center space-x-2 transition duration-300">
               <FontAwesomeIcon icon={faHome} />
