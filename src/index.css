@@ -3,14 +3,11 @@
 @tailwind utilities;
 
 
-.navigation-bar {
-  position: absolute;
-}
+
 
 .navigation-content {
-  background: linear-gradient(to right, #010328, #273fdd);
+  background: linear-gradient(to right, #220000, #920000);
   padding: 6%;
-  position: fixed;
   z-index: 1000;
   bottom: 0;
   left: 10%;
@@ -23,6 +20,10 @@
   display: flex;
 }
 
+.timeline {
+  display: flex;
+  flex-direction: column-reverse !important;
+}
 @media(min-width: 1024px) {
 
   .navigation-content {

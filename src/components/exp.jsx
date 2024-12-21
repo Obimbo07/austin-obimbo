@@ -5,11 +5,11 @@ import { experience } from './Data';
 const Exp = () => {
   return (
     <>
-     <div className="description-section flex flex-col justify-center w-full  m-4">
+     <div className="description-section flex  justify-center w-full  m-4">
                <div className="timeline relative">
                  {experience.map((exp, i) => (
                    <div key={exp.index} className="relative pl-8 pr-8 mb-8">
-                     {/* Line and dot */}
+                     
                      <div className="absolute left-2 top-0 h-full flex flex-col items-center">
                        {i !== experience.length - 1 && (
                          <div className="h-full w-1 bg-gradient-to-b from-blue-500 to-purple-500"></div>
@@ -19,8 +19,16 @@ const Exp = () => {
                      <div className="relative">
                        <Card className="shadow-lg bg-gradient-to-r from-white via-gray-50 to-gray-100 hover:shadow-xl hover:scale-105 transition-all duration-300">
                          <CardHeader>
-                           <CardTitle className="text-blue-500 text-2xl font-semibold">{exp.workTitle}</CardTitle>
-                           <CardDescription className="text-gray-600">{exp.date}</CardDescription>
+                           <CardTitle className="text-blue-500 text-2xl font-semibold">
+                              <img src={exp.workLogo} alt="Logo" className="w-10 h-auto float-left mr-4" />
+                              <span className="font-bold">{exp.workOrganisation}</span> <br />
+          
+                              <span className="font-semibold text-black">{exp.workTitle}</span>
+                            </CardTitle>
+                           <CardDescription className="text-gray-600 font-bold">
+                            {exp.date}
+                            
+                            </CardDescription>
                          </CardHeader>
                          <CardContent>
                            <p className="text-gray-700">{exp.description}</p>
