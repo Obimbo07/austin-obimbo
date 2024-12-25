@@ -22,6 +22,7 @@ import GitHubContributionGraph from "../components/GithubContributionGraph";
 import Exp from "../components/exp";
 import Achv from "../components/Achv";
 import { Link } from "react-router-dom";
+import ProjectsAccordion from "../components/ProjectsAccordion";
 
 
 const Intro = () => {
@@ -44,10 +45,10 @@ const Intro = () => {
                     </p>
                     <div className=" flex justify-between w-full ">
                         
-                        <Link href='https://docs.google.com/document/d/16JNuFYkcSz5_eDSnlnLinkezV_bU9NClhMa/edit?usp=sharing&ouid=107251804543803193655&rtpof=true&sd=true' target="_blank" className="bg-orange-500 hover:p-4 rounded-full text-white py-2 px-4">
+                        <Link href='https://docs.google.com/document/d/16JNuFYkcSz5_eDSnlnLinkezV_bU9NClhMa/edit?usp=sharing&ouid=107251804543803193655&rtpof=true&sd=true' target="_blank" className="bg-gray-900 hover:bg-gray-100 hover:text-black rounded-full text-white py-2 px-4">
                          Get Resume
                        </Link>
-                       <Link to="/contact" className="bg-orange-500 hover:p-4 rounded-full text-white py-2 px-4">
+                       <Link to="/contact" className="bg-gray-900 hover:bg-gray-100 hover:text-black rounded-full text-white py-2 px-4">
                         Contact me
                        </Link>
                      
@@ -63,8 +64,8 @@ const Intro = () => {
                   "I believe in the value of learning through practical application and am dedicated to consistently refining my technological skills..."
                   </p>
                 </div>
-                <Link to="/projects" className="flex  flex-none toolbox  hover:opacity-100 opacity-70 size-40  flex-col w-full md:w-1/2 justify-center items-start gap-4 p-12 rounded-3xl shadow-lg outline outline-1  outline-offset-2 outline-neutral-100">
-                   <p className="text-3xl md:text-4xl bottom-0 text-white font-bold leading-tight opacity-100">Projects</p>
+                <Link to="/technologies" className="flex  flex-none toolbox  hover:opacity-100 opacity-70 size-40  flex-col w-full md:w-1/2 justify-center items-start gap-4 p-12 rounded-3xl shadow-lg outline outline-1  outline-offset-2 outline-neutral-100">
+                   <p className="text-3xl md:text-4xl bottom-0 text-white font-bold leading-tight opacity-100">Toolkit</p>
                 </Link>
             </div>
         </div>
@@ -79,7 +80,7 @@ const Intro = () => {
           <div className="rounded-3xl shadow-lg bg-white h-auto flex flex-col">
               <div className="flex justify-between p-8">
                 <h1 className="text-3xl md:text-4xl font-bold leading-tight">Austin Obimbo</h1>
-                 <a href='https://docs.google.com/document/d/16JNuFYkcSz5_eDSnlnAezV_bU9NClhMa/edit?usp=sharing&ouid=107251804543803193655&rtpof=true&sd=true' target="_blank" className="rounded-2xl shadow-2xl size-40 md:size-52 hover:size-44 resume flex items-end justify-center text-center text-3xl opacity-70 outline outline-1  outline-offset-2 outline-neutral-100" className="bg-orange-600 p-4 gap-2 rounded-full text-white">
+                 <a href='https://docs.google.com/document/d/16JNuFYkcSz5_eDSnlnAezV_bU9NClhMa/edit?usp=sharing&ouid=107251804543803193655&rtpof=true&sd=true' target="_blank"  className="bg-orange-600 p-4 gap-2 rounded-full text-white">
                    Get Resume
                   <FontAwesomeIcon className="px-2" icon={faArrowRightToFile} />
                  </a>
@@ -118,7 +119,7 @@ const Intro = () => {
                   </AccordionContent>
                 </AccordionItem>
               </Accordion>
-
+              <ProjectsAccordion />
              </div>
           </div>
         </div>
