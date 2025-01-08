@@ -20,7 +20,7 @@ const Exp = () => {
                        <Card className="shadow-lg bg-gradient-to-r from-white via-gray-50 to-gray-100 hover:shadow-xl hover:scale-105 transition-all duration-300">
                          <CardHeader>
                            <CardTitle className="text-blue-500 text-2xl font-semibold">
-                              <img src={exp.workLogo} alt="Logo" className="w-10 h-auto float-left mr-4" />
+                              <img src={exp.workLogo} width={120} height={120} alt="Logo" className="mr-4" />
                               <span className="font-bold">{exp.workOrganisation}</span> <br />
           
                               <span className="font-semibold text-black">{exp.workTitle}</span>
