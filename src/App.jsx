@@ -15,6 +15,7 @@ const App = () => {
   return (
     <div className="bg-gray-400 py-4">
      <Navbar />
+     <div className='mx-4 lg:mx-44'>
       <Routes>
         <Route path="/" element={<Intro />} />
         <Route path="/home" element={<Home />} />
@@ -25,7 +26,7 @@ const App = () => {
         <Route path="/publications" element={<Blog /> } />
         <Route path="/contact" element={<Contact />} />
       </Routes>
-      
+      </div>
     </div>
   );
 };
