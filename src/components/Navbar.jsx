@@ -13,7 +13,7 @@ import {
 const Navbar = () => {
   return (
     <>
-      <nav className="bg-gradient-to-tr from-gray-950 to-gray-100 p-8 mx-4 sticky md:top-0 lg:mx-44 rounded-3xl md:px-4 z-10">
+      <nav className="bg-gradient-to-tr from-gray-950 to-gray-100 p-8 mx-4 sticky top-0 lg:mx-44 rounded-3xl md:px-4 z-10">
         <ul className="flex flex-row flex-wrap sm:flex-row sm:space-x-10  justify-evenly gap-8">
           <li>
             <Link to="/" className="text-white hover:text-gray-200 flex  md:flex-col items-center space-x-2 transition duration-300">
