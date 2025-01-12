@@ -44,15 +44,13 @@ const Intro = () => {
                         Austin Obimbo is an innovative software developer who creates
                         architecture redefining modern living spaces.
                     </p>
-                    <div className=" flex justify-between w-full ">
-                        
-                        <Link href='https://docs.google.com/document/d/16JNuFYkcSz5_eDSnlnLinkezV_bU9NClhMa/edit?usp=sharing&ouid=107251804543803193655&rtpof=true&sd=true' target="_blank" className="bg-gray-900 hover:bg-gray-100 hover:text-black rounded-full text-white py-2 px-4">
+                    <div className="flex justify-between w-full ">
+                        <Link href='https://docs.google.com/document/d/16JNuFYkcSz5_eDSnlnLinkezV_bU9NClhMa/edit?usp=sharing&ouid=107251804543803193655&rtpof=true&sd=true' target="_blank" className="bg-gray-900 hover:bg-gray-100 hover:text-black rounded-full text-white p-2">
                          Get Resume
                        </Link>
-                       <Link to="/contact" className="bg-gray-900 hover:bg-gray-100 hover:text-black rounded-full text-white py-2 px-4">
+                       <Link to="/contact" className="bg-gray-900 hover:bg-gray-100 hover:text-black rounded-full text-white p-2">
                         Contact me
                        </Link>
-                     
                     </div>
                 </div>
                 <div className="at-office flex-1 rounded-3xl">
@@ -75,14 +73,14 @@ const Intro = () => {
           <div className="rounded-3xl shadow-lg bg-white h-auto flex flex-col">
               <div className="flex justify-between p-8">
                 <h1 className="text-3xl md:text-4xl font-bold leading-tight">Austin Obimbo</h1>
-                 <a href='https://docs.google.com/document/d/16JNuFYkcSz5_eDSnlnAezV_bU9NClhMa/edit?usp=sharing&ouid=107251804543803193655&rtpof=true&sd=true' target="_blank"  className="bg-orange-600 p-4 gap-2 rounded-full text-white">
+                 <a href='https://docs.google.com/document/d/16JNuFYkcSz5_eDSnlnAezV_bU9NClhMa/edit?usp=sharing&ouid=107251804543803193655&rtpof=true&sd=true' target="_blank"  className="bg-orange-500 font-bold p-2 gap-2 rounded-full text-white">
                    Get Resume
                   <FontAwesomeIcon className="px-2" icon={faArrowRightToFile} />
                  </a>
               </div>
              <div className="w-full">
                 <div className="booking-image p-12 mx-8 rounded-3xl">
-                <h1 className="text-3xl md:text-4xl text-white font-bold leading-tight">
+                <h1 className="text-3xl md:text-4xl text-white bg-orange-500 rounded-3xl p-2 font-extrabold leading-tight">
                   Austin's Gallery
                 </h1>
                 </div>
