@@ -130,3 +130,23 @@ export const HeroData = [
      ],
    },
  ];
+
+
+
+export const  services = [
+  {
+    name: "Web Design and Development",
+  },
+  {
+    name: "System Design and Development"
+  },
+  {
+    name: "Data Operations and Analysts"
+  },
+  {
+    name: "Payment Intergration and development"
+  },
+  {
+    name: "Internt of Things Software Architecture Development"
+  },
+]
