@@ -19,7 +19,7 @@ const ProjectCard = ({ project }) => {
         <h3 className="text-lg font-bold text-blue-700 hover:text-blue-800">{project.name}</h3>
         <p className="text-sm text-gray-600 mb-2">{project.description.slice(0, 100)}...</p>
         <button
-          className="px-3 py-1 mt-auto rounded-md text-white bg-green-500 hover:bg-green-600 focus:outline-none"
+          className="px-3 py-1 mt-auto rounded-md text-white bg-orange-500 hover:bg-orange-900 focus:outline-none"
           onClick={handleOpenModal}
         >
           View Details
@@ -81,11 +81,11 @@ const Project = () => {
   }
 
   return (
-    <section className="container mx-auto px-4 py-8 bg-gradient-to-r from-blue-500 to-green-500">
+    <section className="bg-gradient-to-r from-orange-500 to-gray-900">
       <div className='p-10 mx-auto'>
         <h2 className="text-3xl font-bold text-white mb-4 sm:text-center">MY RECENT PROJECTS</h2>
         <hr className="border-t border-white mb-6" />
-        <div className='flex flex-wrap lg:flex-nowrap  gap-4' {...settings}>
+        <div className='flex flex-wrap lg:flex-wrap gap-4 ' {...settings}>
           {recentProjects.map((project) => (
             <div key={project.name} className="px-2 w-fit">
               <ProjectCard project={project} />
@@ -103,7 +103,7 @@ const Project = () => {
         <hr className="border-t border-white mb-6" />
         <div className='flex flex-wrap '>
           {otherProjects.map((project) => (
-            <div key={project.name} className="px-2 md:w-1/2 mb-10  md:flex-wrap ">
+            <div key={project.name} className="px-2 mb-10  md:flex-wrap ">
               <ProjectCard project={project} />
             </div>
           ))}

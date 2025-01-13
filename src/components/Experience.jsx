@@ -1,45 +1,22 @@
 import React from 'react';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from './ui/card';
+import { experience, achievements } from './Data';
 
-const experience = [
-  {
-    index: 1,
-    workTitle: 'Self Employed',
-    workLocation: 'Remote',
-    description: 'Worked on 30+ projects as a Full stack developer. Spent 3000+ hours remotely understanding algorithms and data structures using technologies like Ruby on Rails, React (Next.js & Vite), and React Native.',
-    date: 'Feb 14th 2023 - Present',
-  },
-  {
-    index: 2,
-    workTitle: 'Freelance Software Engineer',
-    workLocation: 'Remote',
-    description: 'Helped NGOs and non-profits improve their technological advancements by doing pro-bono and low-bono projects. Worked with technologies like WordPress, CMS, and AI tools to enhance their profiles and output.',
-    date: 'August 2024 - Present',
-  },
-];
 
-const achievements = [
-  {
-    index: 0,
-    title: 'Won Tech to the Rescue Zero Hunger Hackathon',
-    date: '22nd - 24th May 2024',
-    description: 'Developed a USSD-Based Surplus Food Distribution System to combat food waste and improve food accessibility using USSD and Africa’s Talking API.',
-    link: 'https://www.techtotherescue.org/hackathon/meet-the-winners/',
-  },
-];
+
 
 const Experience = () => {
   return (
     <section className="experience-section p-6">
 
       <div className=" mx-auto flex flex-col md:flex-row gap-16">
-        {/* Achievements Section */}
+       
         <div className="description-section flex flex-col justify-center w-full md:w-1/2 mb-8 md:mb-0">
           <h2 className="text-4xl font-extrabold text-neutral-100 mb-8 text-center">Achievements</h2>
           <div className="timeline relative">
             {achievements.map((achievement, i) => (
               <div key={achievement.index} className="relative  mb-12">
-                {/* Line and dot */}
+                
                 <div className="absolute left-6 top-0 h-full flex flex-col items-center">
                   {i !== achievements.length - 1 && (
                     <div className="h-full w-1 bg-gradient-to-b from-blue-500 to-purple-500"></div>

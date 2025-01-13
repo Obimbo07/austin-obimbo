@@ -6,7 +6,7 @@ import InteractiveUi from '../components/InteractiveUi';
 
 const About = () => {
   return (
-    <div className='bg-gradient-to-tr from-blue-900 to-blue-900 '>
+    <div className=''>
     <div className='md:p-16'>
     <AboutComponent />
     <GitHubContributionGraph />

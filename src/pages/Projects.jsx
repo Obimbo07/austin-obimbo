@@ -3,8 +3,16 @@ import React, { useState } from 'react'
 
 export const projects = [
     {
+      name: 'Business Management system',
+      description: 'A secure end to end BMS that helps business owners manage thier services and customers in a decentralized manner. The system is well equipped with and administrator dashboard that has worker management features. Handling transactions from paid services, workers commission and financial reports. The customer interface enables them intergrate with the owner services, book appointments and reserve seats. Advanced payments are also an option.',
+      technologies: ['Ruby on Rails', 'Daraja API'],
+      image: 'daraja_mpesa.png',
+      liveLink: 'https://github.com/Obimbo07/pos',
+      sourceLink: 'https://github.com/Obimbo07/pos',
+    },
+    {
       name: 'Daraja test',
-      description: 'An implementation of Mpesa daraja Express checkout API. This implementation demonstrates how best to intergrate the mpesa models and payment logic.',
+      description: 'An implementation of Mpesa daraja Express checkout API. This implementation demonstrates how best to intergrate the mpesa models and payment logic using ruby on rails. I have handled mpesa stk intergration with both online and offline functionality.',
       technologies: ['Ruby on Rails', 'Daraja API'],
       image: 'daraja_mpesa.png',
       liveLink: 'https://github.com/Obimbo07/daraja-test',
@@ -12,23 +20,23 @@ export const projects = [
     },
     {
       name: 'Book Destination',
-      description: 'This Full stack application helps users reserve holiday, meeting and BNB destinations, in various places. Users have can perform CRUD operations on the destinations, and schedule reservations',
-      technologies: ['Ruby on Rails', 'React/Redux'],
+      description: 'This Full stack application helps users reserve holidays, meetings and BNB destinations, in various places. Users have can perform CRUD operations on the destinations, and schedule reservations. The application handles user authentication from backend using jwt. This is used to handle sessions in the front-end. User accounts are connected to their ',
+      technologies: ['Ruby on Rails', 'React/Redux', 'Devise'],
       image: 'book_destination_logo.jpeg',
       liveLink: 'https://github.com/Obimbo07/book-destinations-api',
       sourceLink: 'https://github.com/Obimbo07/book-destinations-api',
     },
     {
       name: 'Budget App',
-      description: 'A more generic versioned Budget App, that includes transaction management features. A User authentication system using JWT authentication. categorised budgets and transactions to be conducted upon each budget',
+      description: 'A more generic versioned Budget App, that includes transaction management features. A User authentication system using JWT.We have categorised budgets and users add transactions to be conducted on each created budget. The application enabled users manage thier transactions budgetwise. This has helped them reduce on unplanned transactions. The budgets feature improved users daily planning needs and also improved their overall financial health.',
       image: 'budget-app.jpg',
-      technologies: ['HTML', 'Bootstrap', 'Ruby on rails'],
+      technologies: ['erb', 'Bootstrap', 'Ruby on rails', 'Devise'],
       liveLink: 'https://budget-app-m9id.onrender.com/',
       sourceLink: 'https://github.com/Obimbo07/budget-app',
     },
     {
       name: 'Recipe Daily',
-      description: 'Recipedaily is a web application designed to help users manage their recipes effortlessly. With features like a dynamic recipe list, public recipes showcase, food management, and a convenient general shopping list, it offers a seamless cooking experience.',
+      description: 'Recipedaily is a web application designed to help users manage their recipes effortlessly. With features like a dynamic recipe list, public recipes showcase, food management, and a convenient general shopping list, it offers a seamless cooking experience. Users authenticate using email and password. Adding foods and creating shopping lists features enable the creation of recipes convinient.',
       technologies: ['HTML', 'Bootstrap', 'Ruby on rails'],
       image: 'recipe.jpg',
       liveLink: 'https://github.com/Obimbo07/Recipedaily',
@@ -36,7 +44,7 @@ export const projects = [
     },
     {
       name: 'Catalogue of My Things',
-      description: 'Collaborated on this console app that helps users manage their category of things. The menu is user-friendly and interactive with a list of options. A record of different types of things you own: books, music albums, movies, and games. The data will be stored in JSON files but will also prepare a database with tables structure analogical to the program\'s class structure.',
+      description: 'Collaborated on this console app that helps users manage their category of things. A user-friendly and interactive menu, with a record of different types of things you own: books, music albums, movies, and games.Data is stored in JSON files but will also prepare a database with tables structure analogical to the program\'s class structure.',
       technologies: ['Ruby', 'Console Interface'],
       image: 'cot.jpg',
       liveLink: 'https://drive.google.com/file/d/1ABEhMnYWMxh2e3631bI7XedAYCIsHYwf/view',
@@ -52,7 +60,7 @@ export const projects = [
     },
     {
       name: 'Tdn',
-      description: 'The devise authenticated blog app allows users connect andf chat with each other.',
+      description: 'The devise authenticated blog app allows users connect and view posted blogs. Uses can upvote, dislike and comment fellow users blogs. When posting a blog a user can set priviledges to other users and disable upvotes and downvotes. The blog app is soon to have video call intergrations and user chat features.',
       technologies: ['Bootstrap', 'Ruby on rails'],
       image: 'projects.png',
       liveLink: 'https://github.com/Obimbo07/tdn',
@@ -60,7 +68,7 @@ export const projects = [
     },
     {
       name: 'School library system',
-      description: 'This project built on Object oriented ruby, is used to manage a school library system. Users are allowed to create persons(student & teachers), Create rental books and save all the data in json files.',
+      description: 'This project built on Object oriented ruby, is used to manage a school library system. Users are allowed to create persons(student & teachers), Create and manage rental books and save all the data in json files.',
       technologies: ['Ruby', 'Console-tool'],
       image: 'projects.png',
       liveLink: 'https://github.com/Obimbo07/school-library',
@@ -91,15 +99,15 @@ export const ProjectCard = ({ project }) => {
     const handleCloseModal = () => setShowModal(false);
   
     return (
-      <div className="h-fit sm:w-1/2 p-4 flex shadow-lg rounded-lg border-yellow-300 border-solid overflow-hidden ">
+      <div className="h-fit md:w-1/4 mb-2 flex shadow-xl rounded-3xl border-solid overflow-hidden">
 
-        <img className="w-1/2 h-48 grow object-fill" src={project.image} alt={project.name} />
+        <img className="w-1/3 h-48 grow object-fill" src={project.image} alt={project.name} />
         
         <div className="px-4 py-2 grow bg-gray-100">
-          <h3 className="text-lg font-bold text-blue-700 hover:text-blue-800">{project.name}</h3>
+          <h3 className="text-lg font-bold text-gray-900 hover:text-blue-800">{project.name}</h3>
           <p className="text-sm text-gray-600 mb-2">{project.description.slice(0, 100)}...</p>
           <button
-            className="px-3 py-1 rounded-md text-white bg-green-500 hover:bg-green-600 focus:outline-none"
+            className="px-3 py-1 rounded-3xl text-white bg-orange-500 hover:bg-orange-900 focus:outline-none"
             onClick={handleOpenModal}
           >
             View Details
@@ -115,8 +123,8 @@ export const ProjectCard = ({ project }) => {
   export const Modal = ({ project, onClose }) => {
     return (
       <div className="fixed inset-0 z-50 bg-gray-500/50 flex justify-center items-center">
-        <div className="w-full max-w-lg rounded-lg bg-white p-4 shadow-md">
-           <img className="w-1/2 h-48 grow object-fill" src={project.image} alt={project.name} />
+        <div className="w-full max-w-lg rounded-lg bg-white p-2 shadow-md">
+          <img className="w-2/3 h-48 grow object-fill"  src={project.image} alt={project.name} />
           <h2 className="text-xl font-bold text-blue-700 mb-4">{project.name}</h2>
           <p className="text-gray-700">{project.description}</p>
           <div className="flex justify-between mt-4">
@@ -137,9 +145,9 @@ export const ProjectCard = ({ project }) => {
   
   const Projects = () => {
     return (
-      <section className="container mx-auto px-4 py-8 bg-gradient-to-r from-blue-500 to-green-500">
-        <h2 className="text-5xl font-bold text-blue-700 text-center font-serif mb-4">MY PROJECTS</h2>
-        <div className="sm:flex flex-wrap justify-stretch ">
+      <section className=" my-8 rounded-3xl py-8 ">
+        <h2 className="text-5xl font-bold text-orange-700 text-center font-serif mb-4">MY PROJECTS</h2>
+        <div className="sm:flex flex-wrap gap-2 justify-center">
           {projects.map((project) => (
             <ProjectCard key={project.id} project={project} />
           ))}

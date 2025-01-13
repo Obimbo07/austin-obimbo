@@ -42,7 +42,7 @@ const certificates = [
       logo: 'microverse-logo.png',
       link: 'https://www.credential.net/e98d43b5-70ba-4858-8fbc-2d0472587b4d',
       date: 'Issued Jan 2024',
-      description: 'Spent 700+ hours with teams understanding algorithms and structures. Created databases and handled data using ruby programming',
+      description: 'Spent 700+ hours with teams understanding algorithms and data structures. Created databases and handled data using ruby programming',
     },
     {
       id: 5,
@@ -60,7 +60,7 @@ const certificates = [
       logo: 'microverse-logo.png',
       link: 'https://www.credential.net/b95f80f9-cd39-45b6-b906-56d0af6c5663',
       date: 'Issued Mar 2024',
-      description: 'I demonstrating mastery of Ruby on Rails by building multiple real-world Rails applications alongside software developers from all over the world.',
+      description: 'I demonstrated mastery of Ruby on Rails by building multiple real-world Rails applications alongside software developers from all over the world.',
     },
     {
       id: 7,
@@ -75,7 +75,7 @@ const certificates = [
 
 const CertificateCard = ({ certificate }) => {
     return (
-        <a className="w-1/2 md:w-1/5 grow bg-white hover:bg-blue-500 rounded-lg shandow-md p-2" href={certificate.link} target="_blank" rel="noreferrer" >
+        <a className="w-1/2 md:w-1/5 grow bg-white hover:bg-blue-500 rounded-3xl shandow-md p-2" href={certificate.link} target="_blank" rel="noreferrer" >
           <img className="w-15 h-10 rounded-sm" src={certificate.logo} alt={certificate.issuerer} />
           <h2 className="font-extrabold text-lg text-wrap font-serif hover:underline decoration-emerald-600">{certificate.name}</h2>
           <h4 className="text-black font-semibold font">{certificate.date}</h4>
@@ -88,8 +88,8 @@ const CertificateCard = ({ certificate }) => {
 
 const Certifications = () => {
     return (
-        <section className="container mx-auto px py-8 bg-blue-300">
-            <h1 className="text-3xl font-bold text-blue-700 mb-4 text-center font-serif">Licencing and Certifications</h1>
+        <section className="px py-8 ">
+            <h1 className="text-3xl font-bold text-gray-900 mb-4 text-center font-serif">Licencing and Certifications</h1>
             <div className="flex flex-wrap justify-around gap-2 p-4">
               {certificates.map((certificate) => (
                 <CertificateCard key={certificate.id} certificate={certificate} />
