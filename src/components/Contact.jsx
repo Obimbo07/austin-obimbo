@@ -7,7 +7,7 @@ const Contact = () => {
         return alert('Thank you!! I will reach out to you shortly')
     }
     return (
-        <div className='bg-white shadow-lg rounded-3xl mx-4 my-4 md:mx-44 mb-10 md:mb-0 p-4 md:flex justify-center'>
+        <div className='bg-white shadow-lg rounded-3xl my-4 mb-10 md:mb-0 p-4 md:flex justify-center'>
         <div className='md:w-1/3 text-black p-2'>
             <h3 className="text-4xl font-semibold mb-4 font-sans">Get In Touch</h3>
             <p className=" mb-6 text-4xl font-sans">
@@ -53,7 +53,7 @@ const Contact = () => {
         />
         <button
             type="submit"
-            className="w-full bg-green-900 hover:bg-red-900 text-white font-bold py-2 px-4 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-700 transition ease-in-out duration-500"
+            className="w-full bg-orange-900 hover:bg-orange-500 text-white font-bold py-2 px-4 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-700 transition ease-in-out duration-500"
             disabled={state.submitting}
         >
             Send Message

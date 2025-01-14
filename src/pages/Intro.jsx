@@ -30,14 +30,14 @@ import Carousel from "../components/Carousel";
 
 const Intro = () => {
   return (
-    <div className=" min-h-screen p-4">
+    <div className=" min-h-screen pt-2">
       {/* Grid Layout for Desktop */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-2 w-full max-w-6xl mx-auto">
         {/* Left Section */}
         <div className="flex flex-col gap-2">
             <div className="flex gap-2">
                 <div className="flex flex-none flex-col w-2/3 justify-center items-start gap-4 p-4 rounded-3xl bg-white shadow-lg">
-                    <h2 className="text-3xl md:text-4xl font-bold leading-tight">
+                    <h2 className="text-2xl md:text-4xl font-bold leading-tight">
                         <span className="">Design</span><br />
                         <span className="">Development</span><br />
                         <span className="text-orange-500">Architecture</span>
@@ -75,11 +75,11 @@ const Intro = () => {
         <div className="grid gap-4">
           
           <div className="rounded-3xl shadow-lg bg-white h-auto flex flex-col">
-              <div className="flex justify-between p-8">
-                <h1 className="text-3xl md:text-4xl font-bold leading-tight">Austin Obimbo</h1>
-                 <a href='https://docs.google.com/document/d/16JNuFYkcSz5_eDSnlnAezV_bU9NClhMa/edit?usp=sharing&ouid=107251804543803193655&rtpof=true&sd=true' target="_blank"  className="bg-orange-500 font-bold p-2 gap-2 rounded-full text-white">
+              <div className="flex justify-between p-4">
+                 <h1 className="text-3xl md:text-4xl font-bold leading-tight">Austin Obimbo</h1>
+                 <a href='https://docs.google.com/document/d/16JNuFYkcSz5_eDSnlnAezV_bU9NClhMa/edit?usp=sharing&ouid=107251804543803193655&rtpof=true&sd=true' target="_blank"  className="bg-orange-500 font-bold p-2 rounded-full text-white">
                    Get Resume
-                  <FontAwesomeIcon className="px-2" icon={faArrowRightToFile} />
+                  <FontAwesomeIcon icon={faArrowRightToFile} />
                  </a>
               </div>
              <div className="w-full">

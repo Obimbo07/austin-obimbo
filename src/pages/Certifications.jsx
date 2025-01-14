@@ -89,7 +89,7 @@ const CertificateCard = ({ certificate }) => {
 const Certifications = () => {
     return (
         <section className="px py-8 ">
-            <h1 className="text-3xl font-bold text-gray-900 mb-4 text-center font-serif">Licencing and Certifications</h1>
+            <h1 className="text-3xl font-bold text-white mb-4 text-center font-serif">Licencing and Certifications</h1>
             <div className="flex flex-wrap justify-around gap-2 p-4">
               {certificates.map((certificate) => (
                 <CertificateCard key={certificate.id} certificate={certificate} />
