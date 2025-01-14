@@ -22,7 +22,7 @@ const articles = [
 const Blog = () => {
   return (
     <section className="container mx-auto px-4 py-16">
-      <h2 className="font-bold text-center text-white-500 text-3xl p-4 outline mb-4 rounded-3xl">Blogs</h2>
+      <h2 className="font-bold text-center text-white text-3xl p-4 outline mb-4 rounded-3xl">Blogs</h2>
       <div className="flex flex-wrap gap-32 justify-center">
         {articles.map((article) => (
           <article key={article.id} className="bg-neutral-900 text-white shadow-md rounded-3xl overflow-hidden md:w-1/3">
