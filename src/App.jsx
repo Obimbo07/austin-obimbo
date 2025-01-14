@@ -13,7 +13,7 @@ import Intro from './pages/Intro';
 
 const App = () => {
   return (
-    <div className="bg-gray-400 py-4">
+    <div className="py-4 bg-aurora">
      <Navbar />
      <div className='mx-4 lg:mx-44'>
       <Routes>
@@ -27,6 +27,7 @@ const App = () => {
         <Route path="/contact" element={<Contact />} />
       </Routes>
       </div>
+      <Footer />
     </div>
   );
 };
