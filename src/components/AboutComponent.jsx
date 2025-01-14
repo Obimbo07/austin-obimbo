@@ -1,11 +1,22 @@
-import { faLink } from '@fortawesome/free-solid-svg-icons';
+import { faLink, faVideo } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
+import React, { useEffect } from "react";
 import AboutText from './AboutText';
 
 
 const AboutComponent = () => {
-  
+   useEffect(() => {
+      (async function () {
+        const cal = await getCalApi();
+        cal("ui", {
+          theme: "dark",
+          styles: {
+            branding: { brandColor: "#000000" }
+          }
+        });
+      })();
+    }, []);
   return (
     <>
       <div className="bg-grey-300 sm:flex md:flex-col">
@@ -29,20 +40,20 @@ const AboutComponent = () => {
               href="https://docs.google.com/document/d/16JNuFYkcSz5_eDSnlnAezV_bU9NClhMa/edit?usp=sharing&ouid=107251804543803193655&rtpof=true&sd=true"
               target="_blank" // This will open the link in a new tab
               rel="noopener noreferrer" // This is a security measure when using target="_blank"
-              className=' rounded-full text-white font-bold hover:text-blue-300 p-4 m-4 w-full flex items-center justify-center'
+              className='rounded-full text-white font-bold hover:text-blue-300 p-4 m-4 w-full flex items-center justify-center'
             >
               Get Resume
               <FontAwesomeIcon icon={faLink} className='ml-2' />
             </a>
 
             <a
-              href="https://docs.google.com/document/d/16JNuFYkcSz5_eDSnlnAezV_bU9NClhMa/edit?usp=sharing&ouid=107251804543803193655&rtpof=true&sd=true"
+              data-cal-link="austin.obimbo"
               target="_blank" // This will open the link in a new tab
               rel="noopener noreferrer" // This is a security measure when using target="_blank"
               className=' rounded-full text-white font-bold hover:text-blue-300 p-4 m-4 w-full flex items-center justify-center'
             >
-              Get Resume
-              <FontAwesomeIcon icon={faLink} className='ml-2' />
+              Book Meeting
+              <FontAwesomeIcon icon={faVideo} className='ml-2' />
             </a>
            </div>
         </div>
