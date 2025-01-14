@@ -6,17 +6,7 @@ import AboutText from './AboutText';
 
 
 const AboutComponent = () => {
-   useEffect(() => {
-      (async function () {
-        const cal = await getCalApi();
-        cal("ui", {
-          theme: "dark",
-          styles: {
-            branding: { brandColor: "#000000" }
-          }
-        });
-      })();
-    }, []);
+   
   return (
     <>
       <div className="bg-grey-300 sm:flex md:flex-col">

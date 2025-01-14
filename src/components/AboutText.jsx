@@ -12,13 +12,13 @@ const AboutText = () => {
                 <AvatarImage src="rename.jpg" />
                 <AvatarFallback>Austin</AvatarFallback>
             </Avatar>
-            <h2 className="text-xl font-bold text-start md:text-center mb-4">
+            <h2 className="text-xl font-extrabold text-start md:text-center mb-4">
               I am a proactive software engineer based in Mombasa, Kenya, committed to shaping the future.
             </h2>
+            
            </div>
             
          <div className="p-8">
-          
           {/* <p className="text-base sm:text-lg md:text-xl text-start md:text-center mb-4">
             I am currently in my final year of Bachelor's degree in Information Technology,
             In my role as a disciplined data analyst, I focus on making data-driven decisions that enhance product profitability and scalability. 
