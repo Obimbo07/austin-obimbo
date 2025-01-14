@@ -19,7 +19,8 @@
     background-image: url(/waterfall.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: 19%;
+    background-position:center;
+    background-attachment: fixed;
   }
 
   .central-image {
