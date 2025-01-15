@@ -26,11 +26,16 @@ import ProjectsAccordion from "../components/ProjectsAccordion";
 import Quote from "../components/Quote";
 import { Services } from "../components/Services";
 import Carousel from "../components/Carousel";
+import TawkMessengerReact from '@tawk.to/tawk-messenger-react';
 
 
 const Intro = () => {
   return (
     <div className="bg-[#f8f2f0] bg-gray-400 min-h-screen p-4">
+      <TawkMessengerReact
+                propertyId="64ce31b8cc26a871b02d6f71"
+                widgetId="1ihl1mn2g"
+                />
       {/* Grid Layout for Desktop */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-2 w-full max-w-6xl mx-auto">
         {/* Left Section */}

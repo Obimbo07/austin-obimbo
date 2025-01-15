@@ -7,6 +7,7 @@ import {
   } from "@/components/ui/accordion"
 import Achv from './Achv'
 import Project from './Project'
+
 const ProjectsAccordion = () => {
   return (
     <>
