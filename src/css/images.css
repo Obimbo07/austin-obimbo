@@ -11,13 +11,18 @@
 .passport-conn {
     background-image: url('/passport.jpg'), url('/rename.jpg'), url('/vision.jpg'), url('/small-image-3.jpg');
     background-repeat: no-repeat;
-    background-size: 20%, 20%, 20%, 20%;
     background-position: center, 15% 10%, 80% 20%, 20% 80%;
-    background-clip: padding-box;
-    background-origin: border-box;
-    background-blend-mode: overlay;
+   
   }
-  
+
+  .bg-aurora {
+    background-image: url(/waterfall.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center;
+    background-attachment: fixed;
+  }
+
   .central-image {
     z-index: -1;
   }
@@ -106,10 +111,10 @@
 }
 
 .toolbox {
-  background-image: url('/vs-code.png'), url('/nodejs.png'), url('/postgres.png'), url('/aws-logo.png');
+  background-image: url('/vs-code.png'), url('/nodejs.png'), url('/postgres.png'), url('/aws-logo.png'), url('/ruby.png'), url('/vite.svg'), url('/zoom.png'), url('/python.png'), url('javascript.png');
   background-repeat: no-repeat;
-  background-size: 20%, 20%, 20%, 20%;
-  background-position: center, 10% 10%, 80% 20%, 20% 80%;
+  background-size: 40%, 40%, 40%, 40%, 33%, 35%, 40%, 25%, 50%;
+  background-position: 90% 50%, 10% 10%, 80% 20%, 20% 80%, 90% 80%, 20% 60%, 10% 30%, 70% 100%, 20% 100%;
   background-clip: padding-box;
   background-origin: border-box;
   background-blend-mode: overlay;

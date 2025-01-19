@@ -146,7 +146,7 @@ export const ProjectCard = ({ project }) => {
   const Projects = () => {
     return (
       <section className=" my-8 rounded-3xl py-8 ">
-        <h2 className="text-5xl font-bold text-orange-700 text-center font-serif mb-4">MY PROJECTS</h2>
+        <h2 className="text-5xl font-bold text-white text-center font-serif mb-4">MY PROJECTS</h2>
         <div className="sm:flex flex-wrap gap-2 justify-center">
           {projects.map((project) => (
             <ProjectCard key={project.id} project={project} />

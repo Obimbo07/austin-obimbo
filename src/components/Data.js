@@ -144,7 +144,7 @@ export const  services = [
     name: "Data Operations and Analysts"
   },
   {
-    name: "Payment Intergration and development"
+    name: "Financial systems, Payment Intergrations"
   },
   {
     name: "Internt of Things Software Architecture Development"

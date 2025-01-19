@@ -1,5 +1,5 @@
 import * as React from "react"
-
+import { Link } from 'react-router-dom';
 import { Card, CardContent } from "@/components/ui/card"
 import {
   Carousel,
@@ -27,9 +27,13 @@ export function Services() {
             <div className="p-1">
               <Card className="bg-orange-500">
                 <CardContent className="flex items-center justify-center p-6">
-                  <span className="text-xl font-semibold">{service.name}</span>
+                  <span className="text-xl font-semibold text-white">{service.name}</span>
                 </CardContent>
+                
               </Card>
+               <Link to="/contact">
+                  <span className="text-white font-semibold my-8 text-xl p-2 bg-orange-500 rounded-xl">Contact me</span>
+               </Link>
             </div>
           </CarouselItem>
         ))}
