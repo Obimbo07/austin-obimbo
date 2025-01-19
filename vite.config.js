@@ -23,5 +23,6 @@ export default defineConfig({
   build: {
       chunkSizeWarningLimit: 1000,
       sourcemap: true,
+      cssCodeSplit: true,
     },
 })

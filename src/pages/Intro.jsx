@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   Card,
   CardContent,
@@ -27,10 +27,38 @@ import Quote from "../components/Quote";
 import { Services } from "../components/Services";
 import Carousel from "../components/Carousel";
 import TawkMessengerReact from '@tawk.to/tawk-messenger-react';
+import { DNA } from "react-loader-spinner";
 
 
 const Intro = () => {
+  const [isloading, setIsloading] = useState(true)
+
+  useState(() => {
+    const timer = setIsloading(() =>{
+      setIsloading(false);
+    }, 3000);
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (isloading) {
+    return (
+      <>
+        <div className="h-screen flex items-center justify-center">
+          <DNA
+            visible={true}
+            height="200"
+            width="200"
+
+            ariaLabel="dna-loading"
+            wrapperStyle={{}}
+            wrapperClass="dna-wrapper"
+          />
+        </div>
+      </>
+    );
+  }
   return (
+    <>
     <div className="min-h-screen p-4">
       <TawkMessengerReact
                 propertyId="64ce31b8cc26a871b02d6f71"
@@ -136,6 +164,7 @@ const Intro = () => {
       </div>
     
     </div>
+    </>
   );
 };
 
