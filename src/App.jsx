@@ -13,7 +13,7 @@ import Intro from './pages/Intro';
 
 const App = () => {
   return (
-    <div className="py-4 bg-aurora">
+    <div className="py-4 bg-gray-500">
      <Navbar />
      <div className='mx-4 lg:mx-44'>
       <Routes>

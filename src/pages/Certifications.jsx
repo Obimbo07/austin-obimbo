@@ -71,7 +71,25 @@ const certificates = [
       date: 'Issued Mar 2024',
       description: 'Earned after working through 1500+ hours of remote pair programming, learning to code with teams from around the world.',
     },
+    {
+      id: 8,
+      name: 'Multimodal RAG: Chat with videos',
+      issuerer: 'DeepLearning.ai',
+      logo: 'dlai-logo.webp',
+      link: 'https://www.credential.net/0d6be080-7275-404a-acfd-ba40b20f7bf7',
+      date: 'Issued Jan 2025',
+      description: 'Build an interactive system for querying video content using multimodal AI: Computer Vision, Embeddings, MultiModal, NLP, RAG, Search and Retrieval, and Vector Databases.',
+    },
 ];
+
+const sortedCertificates = certificates.sort((a, b) => {
+  const dateA = new Date(a.date.replace('Issued ', ''));
+  const dateB = new Date(b.date.replace('Issued ', ''));
+  return dateB - dateA; // Descending order
+});
+
+console.log(sortedCertificates);
+
 
 const CertificateCard = ({ certificate }) => {
     return (
@@ -91,8 +109,8 @@ const Certifications = () => {
         <section className="px py-8 ">
             <h1 className="text-3xl font-bold text-white mb-4 text-center font-serif">Licencing and Certifications</h1>
             <div className="flex flex-wrap justify-around gap-2 p-4">
-              {certificates.map((certificate) => (
-                <CertificateCard key={certificate.id} certificate={certificate} />
+              {sortedCertificates.map((certificate) => (
+                <CertificateCard className="flex flex-row-reverse" key={certificate.id} certificate={certificate} />
               ))}
             </div>
         </section>

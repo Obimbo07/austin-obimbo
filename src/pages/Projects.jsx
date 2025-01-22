@@ -3,6 +3,14 @@ import React, { useState } from 'react'
 
 export const projects = [
     {
+      name: 'Chat with Videos:',
+      description: 'Build an interactive system for querying video content using multimodal AI',
+      technologies: ['Computer Vision', 'Embeddings', 'MultiModal', 'NLP', 'RAG', 'Vector Databases', 'Search and Retrieval'],
+      image: 'dlai-celebration-bg.webp',
+      liveLink: '',
+      sourceLink: '',
+    },
+    {
       name: 'Business Management system',
       description: 'A secure end to end BMS that helps business owners manage thier services and customers in a decentralized manner. The system is well equipped with and administrator dashboard that has worker management features. Handling transactions from paid services, workers commission and financial reports. The customer interface enables them intergrate with the owner services, book appointments and reserve seats. Advanced payments are also an option.',
       technologies: ['Ruby on Rails', 'Daraja API'],
@@ -100,10 +108,10 @@ export const ProjectCard = ({ project }) => {
   
     return (
       <div className="h-fit md:w-1/4 mb-2 flex shadow-xl rounded-3xl border-solid overflow-hidden">
-
-        <img className="w-1/3 h-48 grow object-fill" src={project.image} alt={project.name} />
         
-        <div className="px-4 py-2 grow bg-gray-100">
+        <img className="w-1/2 h-auto grow object-scale-cover" src={project.image} alt={project.name} />
+        
+        <div className="w-1/2 px-4 py-2 grow bg-gray-100">
           <h3 className="text-lg font-bold text-gray-900 hover:text-blue-800">{project.name}</h3>
           <p className="text-sm text-gray-600 mb-2">{project.description.slice(0, 100)}...</p>
           <button
@@ -147,7 +155,7 @@ export const ProjectCard = ({ project }) => {
     return (
       <section className=" my-8 rounded-3xl py-8 ">
         <h2 className="text-5xl font-bold text-white text-center font-serif mb-4">MY PROJECTS</h2>
-        <div className="sm:flex flex-wrap gap-2 justify-center">
+        <div className="sm:flex flex-wrap gap-2 justify-evenly">
           {projects.map((project) => (
             <ProjectCard key={project.id} project={project} />
           ))}
