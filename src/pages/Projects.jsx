@@ -11,6 +11,22 @@ export const projects = [
       sourceLink: '',
     },
     {
+      name: 'LykeCommerce',
+      description: 'Built a UK based e-commerce platform.',
+      technologies: ['Ecommerce', 'Python', 'GeoLocation', 'Payment System', 'Epayments', 'Project Managment', 'Search and Retrieval'],
+      image: 'logo.svg',
+      liveLink: 'http://lykeonline.com',
+      sourceLink: '',
+    },
+    {
+      name: 'Face-it API',
+      description: 'Build a scalable face recognition api. We use Facenet model for image detection and recognition. The model backend uses retinaface.',
+      technologies: ['Computer Vision', 'Embeddings', 'Facenet512', 'NLP', 'RAG', 'Vector Databases', 'Search and Retrieval'],
+      image: 'face-it_logo.png',
+      liveLink: 'http://139.162.90.90/docs',
+      sourceLink: 'https://github.com/Obimbo07/face-it',
+    },
+    {
       name: 'Business Management system',
       description: 'A secure end to end BMS that helps business owners manage thier services and customers in a decentralized manner. The system is well equipped with and administrator dashboard that has worker management features. Handling transactions from paid services, workers commission and financial reports. The customer interface enables them intergrate with the owner services, book appointments and reserve seats. Advanced payments are also an option.',
       technologies: ['Ruby on Rails', 'Daraja API'],
