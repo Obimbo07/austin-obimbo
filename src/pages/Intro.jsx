@@ -95,7 +95,7 @@ const Intro = () => {
                 </div>
                 </div>
              </div>
-             <div className="w-full my-8 p px-8">
+             <div className="w-full my-4  px-4">
               <Accordion type="single" collapsible>
                 <AccordionItem value="item-1">
                   <AccordionTrigger className="">

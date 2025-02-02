@@ -15,8 +15,8 @@ const ProjectsAccordion = () => {
                 <AccordionItem value="item-2">
                   <AccordionTrigger className="">
                     <p 
-                      className="font-extrabold text-orange-800 text-center text-3xl">
-                      Projects
+                      className="font-bold text-center text-3xl">
+                      PROJECTS
                       </p>
                   </AccordionTrigger>
                   <AccordionContent>

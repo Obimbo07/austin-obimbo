@@ -30,7 +30,7 @@ export const experience = [
   },
   {
     index: 4,
-    workTitle: 'Full stack Software Engineer',
+    workTitle: 'Software Developer',
     workLocation: 'Remote',
     workOrganisation: 'Tech To the Rescue',
     workLogo: 'TechToTheResacue-logo-horizontal.svg',
