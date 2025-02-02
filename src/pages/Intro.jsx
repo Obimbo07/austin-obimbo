@@ -45,7 +45,7 @@ const Intro = () => {
 
 
   return (
-    <div className="min-h-screen pt-2">
+    <div className=" pt-2">
       <TawkMessengerReact
                 propertyId="64ce31b8cc26a871b02d6f71"
                 widgetId="1ihl1mn2g"
