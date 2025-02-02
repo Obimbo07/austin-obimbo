@@ -138,13 +138,28 @@ export const  services = [
     name: "Web Design and Development",
   },
   {
-    name: "System Design and Development"
+    name: "Software Architect and Managment"
   },
   {
     name: "Data Operations and Analysts"
   },
   {
-    name: "Financial systems, Payment Intergrations"
+    name: "Ai Research scientist"
+  },
+  {
+    name: "Computer Vision"
+  },
+  {
+    name: "Image and Video processing"
+  },
+  {
+    name: "Fintech products, Payment Intergrations"
+  },
+  {
+    name: "DevOps and Deployment"
+  },
+  {
+    name: "CyberSecurity and Digital privacy"
   },
   {
     name: "Internt of Things Software Architecture Development"
