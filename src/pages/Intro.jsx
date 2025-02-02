@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import {
   Card,
   CardContent,
@@ -27,9 +27,23 @@ import Quote from "../components/Quote";
 import { Services } from "../components/Services";
 import Carousel from "../components/Carousel";
 import TawkMessengerReact from '@tawk.to/tawk-messenger-react';
-
+import { getCalApi } from "@calcom/embed-react";
 
 const Intro = () => {
+
+  useEffect(() => {
+    (async function () {
+      const cal = await getCalApi();
+      cal("ui", {
+        theme: "dark",
+        styles: {
+          branding: { brandColor: "#000000" }
+        }
+      });
+    })();
+  }, []);
+
+
   return (
     <div className="min-h-screen pt-2">
       <TawkMessengerReact
@@ -89,7 +103,7 @@ const Intro = () => {
               </div>
              <div className="w-full">
                 <div className="booking-image p-12 mx-8 rounded-3xl">
-                <div className="community-wall bg-gray-800 shadow-2xl text-white relative opacity-90 text-sm hover:opacity-90 rounded-3xl grow">
+                <div className="community-wall bg-green-950 shadow-2xl text-white relative opacity-90 text-sm hover:opacity-90 rounded-3xl grow">
                   <p className="text-white text-center text-xl font-bold p-2">Community wall</p>
                   <h2 className="hidden font-sans text-white text-center font-bold p-2 text-2xl bg-dark-900">Coming Soon</h2>
                 </div>

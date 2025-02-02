@@ -1,5 +1,6 @@
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faVideo } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faEnvelope,
   faPhoneAlt,
@@ -11,12 +12,16 @@ import {
   faGithub,
   faLinkedin,
   faMedium,
-  faTwitter,
+  faXTwitter,
+
 } from "@fortawesome/free-brands-svg-icons";
 import { useForm, ValidationError } from "@formspree/react";
 
 const Footer = () => {
   const [state, handleSubmit] = useForm("xrbzzawk");
+  const currentYear = new Date().getFullYear();
+  const expYear = currentYear - 2021;
+  console.log(expYear);
 
   return (
     <div className="lg:mx-44 mx-4">
@@ -27,16 +32,16 @@ const Footer = () => {
         {/* Top Section */}
         <div className="w-full flex flex-col md:flex-row items-start gap-8">
           {/* About Section */}
-          <div className="md:w-1/3">
+          <div className="md:w-1/3 flex md:flex-col">
             <img
               src="logo-shine.png"
               alt="Logo"
               className="w-20 h-auto rounded-full mb-4"
             />
-            <p className="text-gray-800 font-semibold">
-              Austin Obimbo
+            <p className="text-gray-800  font-semibold">
+              <strong className="text-3xl">Austin Obimbo</strong>
               <br />
-              Engineer with 3+ years of experience creating solutions for the
+              Engineer with +{expYear} years of experience creating solutions to problems for the
               digital era.
             </p>
           </div>
@@ -44,7 +49,7 @@ const Footer = () => {
           {/* Services Section */}
           <div className="md:w-1/3">
             <ul className="list-inside list-disc">
-              <h1 className="font-bold text-2xl mb-4">SERVICES</h1>
+              <h1 className="font-bold text-2xl mb-2">WHAT I DO</h1>
               {[
                 {
                   title: "Web Design and Development",
@@ -79,8 +84,17 @@ const Footer = () => {
           </div>
 
           {/* Contact Form */}
-          <div className="md:w-1/3">
-            <h2 className="font-bold text-2xl mb-4">HIRE ME?</h2>
+          <div className="md:w-1/3 flex flex-wrap">
+            <h2 className="font-bold text-2xl">CONTACT ME?</h2>
+            <a
+              data-cal-link="austin.obimbo"
+              target="_blank" // This will open the link in a new tab
+              rel="noopener noreferrer" // This is a security measure when using target="_blank"
+              className='font-bold hover:bg-blue-900 p-4 underline text-blue-500 hover:text-white flex items-center rounded-full justify-center'
+            >
+              Book Call
+              <FontAwesomeIcon icon={faVideo} className='ml-2' />
+            </a>
             <p className="font-semibold mb-4">
               Submit your email. Austin will contact you shortly.
             </p>
@@ -95,7 +109,7 @@ const Footer = () => {
               <ValidationError prefix="Email" field="email" errors={state.errors} />
               <button
                 type="submit"
-                className="bg-orange-500 hover:bg-orange-600 text-white font-bold py-2 px-4 rounded-xl transition duration-300 disabled:opacity-50"
+                className="bg-green-800 hover:bg-gray-500 text-white font-bold py-2 px-4 rounded-xl transition duration-300 disabled:opacity-50"
                 disabled={state.submitting}
               >
                 <FontAwesomeIcon icon={faShare} className="mr-2" />
@@ -111,16 +125,21 @@ const Footer = () => {
         {/* Bottom Section */}
         <div className="flex flex-col md:flex-row justify-between items-start mt-8 gap-8">
           {/* Social Links */}
-          <div className="flex gap-6">
+          
+          <div className="flex flex-col gap-6">
+            <strong className="text-3xl">Social Links</strong>
+            <span className="flex gap-4">
             <a
               href="https://x.com/austs_"
+              target="_blank"
               className="text-gray-900 hover:text-gray-600 transition duration-300"
               aria-label="Twitter"
             >
-              <FontAwesomeIcon icon={faTwitter} size="2x" />
+              <FontAwesomeIcon icon={faXTwitter} size="2x" />
             </a>
             <a
               href="https://medium.com/@obimboausts"
+              target="_blank"
               className="text-gray-900 hover:text-gray-600 transition duration-300"
               aria-label="Medium"
             >
@@ -128,6 +147,7 @@ const Footer = () => {
             </a>
             <a
               href="https://www.linkedin.com/in/austin-obimbo/"
+              target="_blank"
               className="text-gray-900 hover:text-gray-600 transition duration-300"
               aria-label="LinkedIn"
             >
@@ -135,11 +155,13 @@ const Footer = () => {
             </a>
             <a
               href="https://www.github.com/Obimbo07"
+              target="_blank"
               className="text-gray-900 hover:text-gray-600 transition duration-300"
               aria-label="GitHub"
             >
               <FontAwesomeIcon icon={faGithub} size="2x" />
             </a>
+            </span>
           </div>
 
           {/* Contact Info */}
@@ -167,7 +189,7 @@ const Footer = () => {
           {/* Coffee Support */}
           <a
             href="https://app.shukran.co/AB7508"
-            className="inline-flex items-center px-4 py-2 bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-bold rounded-md transition duration-300"
+            className="inline-flex items-center px-4 py-2 bg-green-600 hover:bg-green-300 text-white font-bold rounded-md transition duration-300"
             aria-label="Buy me a coffee"
           >
             <FontAwesomeIcon icon={faCoffee} className="mr-2" />
@@ -177,7 +199,7 @@ const Footer = () => {
 
         <p className="text-center text-gray-700 mt-8 font-medium">
           COPYRIGHT © 2025 - ALL RIGHTS RESERVED BY{" "}
-          <span className="font-extrabold text-orange-500">AUSTIN OBIMBO</span>
+          <span className="font-extrabold text-yellow-600">AUSTIN OBIMBO</span>
         </p>
       </footer>
     </div>

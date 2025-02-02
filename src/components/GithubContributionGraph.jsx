@@ -16,19 +16,19 @@ const GitHubContributionGraph = () => {
      <h1 className='font-bold text-xl text-center w-fit p-2 font-mono antialiased outline uppercase'>Github contribution calendar</h1>
       <div className="my-4 gap-2 flex">
         <button
-          className="bg-gray-800 hover:bg-gray-300 hover:text-black text-white text-sm p-2 rounded-full "
+          className="bg-green-800 hover:bg-green-800 hover:text-black text-white text-sm p-2 rounded-full "
           onClick={() => handleYearChange(currentYear)}
         >
           Current Year
         </button>
         <button
-          className="bg-gray-800 hover:bg-gray-300 hover:text-black text-white text-sm p-2 rounded-full"
+          className="bg-green-800 hover:bg-green-800 hover:text-black text-white text-sm p-2 rounded-full"
           onClick={() => handleYearChange(currentYear - 1)}
         >
           Previous Year
         </button>
         <button
-          className="bg-gray-800 hover:bg-gray-300 hover:text-black text-white text-sm p-2 rounded-full"
+          className="bg-green-800 hover:bg-green-800 hover:text-black text-white text-sm p-2 rounded-full"
           onClick={() => handleYearChange('last')}
         >
           Last Full Year
