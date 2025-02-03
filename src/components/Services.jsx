@@ -32,7 +32,7 @@ export function Services() {
                 
               </Card>
                <Link to="/contact">
-                  <span className="text-white font-semibold my-8 mt-12 text-xl p-2 bg-green-800 rounded-xl">Contact me</span>
+                  <span className="text-white font-semibold my-8 mt-12 text-xl p-2 bg-gray-800 hover:bg-blue-500 rounded-xl">Contact me</span>
                </Link>
             </div>
           </CarouselItem>

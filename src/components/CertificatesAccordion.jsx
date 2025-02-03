@@ -5,22 +5,23 @@ import {
     AccordionItem,
     AccordionTrigger,
   } from "@/components/ui/accordion"
-import Achv from './Achv'
-import Project from './Project'
+import Certifications, { CertificateCard, sortedCertificates } from '../pages/Certifications'
 
-const ProjectsAccordion = () => {
+const CertificatesAccordion = () => {
   return (
     <>
         <Accordion type="single" collapsible>
                 <AccordionItem value="item-2">
                   <AccordionTrigger className="">
                     <p 
-                      className="font-bold text-center text-2xl">
-                      PROJECTS
+                      className="font-bold text-center uppercase text-2xl">
+                       Licensing and Certification
                       </p>
                   </AccordionTrigger>
                   <AccordionContent>
-                    <Project />
+                    {sortedCertificates.map((certificate) => (
+                      <CertificateCard className="flex flex-row-reverse" key={certificate.id} certificate={certificate} />
+                    ))}
                   </AccordionContent>
                 </AccordionItem>
               </Accordion>
@@ -29,4 +30,4 @@ const ProjectsAccordion = () => {
   )
 }
 
-export default ProjectsAccordion
+export default CertificatesAccordion

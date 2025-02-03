@@ -28,6 +28,7 @@ import { Services } from "../components/Services";
 import Carousel from "../components/Carousel";
 import TawkMessengerReact from '@tawk.to/tawk-messenger-react';
 import { getCalApi } from "@calcom/embed-react";
+import CertificatesAccordion from "../components/CertificatesAccordion";
 
 const Intro = () => {
 
@@ -56,10 +57,10 @@ const Intro = () => {
         <div className="flex flex-col gap-2">
             <div className="flex gap-2">
                 <div className="flex flex-none flex-col w-2/3 justify-center items-start gap-4 p-4 rounded-3xl bg-white shadow-lg">
-                    <h2 className="text-2xl md:text-4xl font-serif font-bold leading-tight">
-                        <span className="">Design</span><br />
-                        <span className="">Development</span><br />
-                        <span className="text-orange-500">Architecture</span>
+                    <h2 className="text-2xl md:text-3xl font-serif font-bold leading-tight">
+                        <span className="text-yellow-500">Design</span><br />
+                        <span className="text-green-500">Development</span><br />
+                        <span className="text-blue-500">Architecture</span>
                     </h2>
                     <p className="text-gray-600">
                         Austin Obimbo is an innovative software developer | AI Research Scientist who creates
@@ -96,25 +97,26 @@ const Intro = () => {
           <div className="rounded-3xl shadow-lg bg-white h-auto flex flex-col">
               <div className="flex justify-between p-4">
                  <h1 className="text-2xl md:text-4xl font-bold leading-tight font-serif">Austin Obimbo</h1>
-                 <a href='https://docs.google.com/document/d/16JNuFYkcSz5_eDSnlnAezV_bU9NClhMa/edit?usp=sharing&ouid=107251804543803193655&rtpof=true&sd=true' target="_blank"  className="bg-green-800 font-bold p-2 rounded-full text-white">
+                 <a href='https://docs.google.com/document/d/16JNuFYkcSz5_eDSnlnAezV_bU9NClhMa/edit?usp=sharing&ouid=107251804543803193655&rtpof=true&sd=true' target="_blank"  className="bg-blue-600 font-bold p-2 rounded-full text-white">
                    Resume
                   <FontAwesomeIcon icon={faArrowRightToFile} />
                  </a>
               </div>
              <div className="w-full">
                 <div className="booking-image p-12 mx-8 rounded-3xl">
-                <div className="community-wall bg-green-950 shadow-2xl text-white relative opacity-90 text-sm hover:opacity-90 rounded-3xl grow">
+                <div className="community-wall bg-blue-800 shadow-2xl text-white relative opacity-90 text-sm hover:opacity-90 rounded-3xl grow">
                   <p className="text-white text-center text-xl font-bold p-2">Community wall</p>
                   <h2 className="hidden font-sans text-white text-center font-bold p-2 text-2xl bg-dark-900">Coming Soon</h2>
                 </div>
                 </div>
              </div>
              <div className="w-full my-4  px-4">
+              <CertificatesAccordion />
               <Accordion type="single" collapsible>
                 <AccordionItem value="item-1">
                   <AccordionTrigger className="">
                     <p 
-                      className="font-bold text-center text-3xl">
+                      className="font-bold text-center text-2xl">
                       WORK EXPERIENCE
                       </p>
                   </AccordionTrigger>
@@ -123,11 +125,12 @@ const Intro = () => {
                   </AccordionContent>
                 </AccordionItem>
               </Accordion>
+
               <Accordion type="single" collapsible>
                 <AccordionItem value="item-2">
                   <AccordionTrigger className="">
                     <p 
-                      className="font-bold text-center text-3xl">
+                      className="font-bold text-center text-2xl">
                       ACHIEVEMENTS
                       </p>
                   </AccordionTrigger>
@@ -137,6 +140,7 @@ const Intro = () => {
                 </AccordionItem>
               </Accordion>
               <ProjectsAccordion />
+
              </div>
           </div>
         </div>

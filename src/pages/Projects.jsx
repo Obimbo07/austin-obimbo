@@ -131,7 +131,7 @@ export const ProjectCard = ({ project }) => {
           <h3 className="text-lg font-bold text-gray-900 hover:text-blue-800">{project.name}</h3>
           <p className="text-sm text-gray-600 mb-2">{project.description.slice(0, 100)}...</p>
           <button
-            className="px-3 py-1 rounded-3xl text-white bg-orange-500 hover:bg-orange-900 focus:outline-none"
+            className="px-3 py-1 rounded-3xl text-white bg-blue-600 hover:bg-gray-500 focus:outline-none"
             onClick={handleOpenModal}
           >
             View Details

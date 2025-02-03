@@ -16,7 +16,7 @@ import {
 
 } from "@fortawesome/free-brands-svg-icons";
 import { useForm, ValidationError } from "@formspree/react";
-
+import { services } from "./Data";
 const Footer = () => {
   const [state, handleSubmit] = useForm("xrbzzawk");
   const currentYear = new Date().getFullYear();
@@ -30,7 +30,7 @@ const Footer = () => {
         className="rounded-3xl text-gray-900 bg-white shadow-md p-6"
       >
         {/* Top Section */}
-        <div className="w-full flex flex-col md:flex-row items-start gap-8">
+        <div className="w-full flex flex-col md:flex-row items-start ">
           {/* About Section */}
           <div className="md:w-1/3 flex md:flex-col">
             <img
@@ -50,33 +50,12 @@ const Footer = () => {
           <div className="md:w-1/3">
             <ul className="list-inside list-disc">
               <h1 className="font-bold text-2xl mb-2">WHAT I DO</h1>
-              {[
-                {
-                  title: "Web Design and Development",
-                  description:
-                    "Creating responsive and modern websites tailored to your needs.",
-                },
-                {
-                  title: "System Design and Development",
-                  description:
-                    "Architecting and implementing scalable systems and solutions.",
-                },
-                {
-                  title: "Data Operations and Analysis",
-                  description:
-                    "Streamlining data processes and uncovering insights for better decisions.",
-                },
-                {
-                  title: "IoT Software Architecture Development",
-                  description:
-                    "Building robust and scalable IoT architectures for connected systems.",
-                },
-              ].map((service, index) => (
+              {services.map((service, index) => (
                 <li
                   key={index}
-                  className="relative group cursor-pointer hover:text-blue-500"
+                  className="list-none hover:text-blue-500"
                 >
-                  {service.title}
+                  {service.name}
                   
                 </li>
               ))}
@@ -109,7 +88,7 @@ const Footer = () => {
               <ValidationError prefix="Email" field="email" errors={state.errors} />
               <button
                 type="submit"
-                className="bg-green-800 hover:bg-gray-500 text-white font-bold py-2 px-4 rounded-xl transition duration-300 disabled:opacity-50"
+                className="bg-blue-700 hover:bg-gray-500 text-white font-bold py-2 px-4 rounded-xl transition duration-300 disabled:opacity-50"
                 disabled={state.submitting}
               >
                 <FontAwesomeIcon icon={faShare} className="mr-2" />
@@ -189,7 +168,7 @@ const Footer = () => {
           {/* Coffee Support */}
           <a
             href="https://app.shukran.co/AB7508"
-            className="inline-flex items-center px-4 py-2 bg-green-600 hover:bg-green-300 text-white font-bold rounded-md transition duration-300"
+            className="inline-flex items-center px-4 py-2 bg-yellow-600 hover:bg-yellow-5400 text-white font-bold rounded-md transition duration-300"
             aria-label="Buy me a coffee"
           >
             <FontAwesomeIcon icon={faCoffee} className="mr-2" />
