@@ -49,7 +49,7 @@ export const projects = [
     },
     {
       name: 'LykeCommerce',
-      description: 'Built a UK based e-commerce platform.',
+      description: 'Built a UK based e-commerce platform. I Developed the systems core functionality inclusive payment system Intergration. The platform has helped improve Lyke\'s mission of providing drugs worldwide. I continue to handle bugs and maintain the software\'s health, managing our cloud host.',
       technologies: ['Ecommerce', 'Python', 'GeoLocation', 'Payment System', 'Epayments', 'Project Managment', 'Search and Retrieval'],
       image: 'logo.svg',
       presentation: 'projects.png',
