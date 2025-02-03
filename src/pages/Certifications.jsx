@@ -1,4 +1,4 @@
-const certificates = [
+export const certificates = [
     {
       id: 0,
       name: 'Data operations at Infosys',
@@ -59,7 +59,7 @@ const certificates = [
       issuerer: 'Microverse',
       logo: 'microverse-logo.png',
       link: 'https://www.credential.net/b95f80f9-cd39-45b6-b906-56d0af6c5663',
-      date: 'Issued Mar 2024',
+      date: 'Issued Feb 2024',
       description: 'I demonstrated mastery of Ruby on Rails by building multiple real-world Rails applications alongside software developers from all over the world.',
     },
     {
@@ -80,18 +80,24 @@ const certificates = [
       date: 'Issued Jan 2025',
       description: 'Build an interactive system for querying video content using multimodal AI: Computer Vision, Embeddings, MultiModal, NLP, RAG, Search and Retrieval, and Vector Databases.',
     },
+    {
+      id: 9,
+      name: 'Machine Learning with python',
+      issuerer: 'FreeCodeCamp',
+      logo: 'free_code_camp_logo.jpeg',
+      link: 'https://freecodecamp.org/certification/Obimbo/machine-learning-with-python-v7',
+      date: 'Issued Feb 2025',
+      description: 'Using TensorFlow framework to build several neural networks and explore more advanced techniques like natural language processing and reinforcement learning. I also dived into neural networks, and learned the principles behind how deep, recurrent, and convolutional neural networks work.',
+    },
 ];
 
-const sortedCertificates = certificates.sort((a, b) => {
+export const sortedCertificates = certificates.sort((a, b) => {
   const dateA = new Date(a.date.replace('Issued ', ''));
   const dateB = new Date(b.date.replace('Issued ', ''));
   return dateB - dateA; // Descending order
 });
 
-console.log(sortedCertificates);
-
-
-const CertificateCard = ({ certificate }) => {
+export const CertificateCard = ({ certificate }) => {
     return (
         <a className="w-1/2 md:w-1/5 grow bg-white hover:bg-blue-500 rounded-3xl shandow-md p-2" href={certificate.link} target="_blank" rel="noreferrer" >
           <img className="w-15 h-10 rounded-sm" src={certificate.logo} alt={certificate.issuerer} />
@@ -101,8 +107,6 @@ const CertificateCard = ({ certificate }) => {
         </a>
     )
 }
-
-
 
 const Certifications = () => {
     return (

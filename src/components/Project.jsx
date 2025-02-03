@@ -19,7 +19,7 @@ const ProjectCard = ({ project }) => {
         <h3 className="text-lg font-bold text-blue-700 hover:text-blue-800">{project.name}</h3>
         <p className="text-sm text-gray-600 mb-2">{project.description.slice(0, 100)}...</p>
         <button
-          className="px-3 py-1 mt-auto rounded-md text-white bg-orange-500 hover:bg-orange-900 focus:outline-none"
+          className="px-3 py-1 mt-auto rounded-md text-white bg-gray-900 hover:bg-gray-500 focus:outline-none"
           onClick={handleOpenModal}
         >
           View Details
@@ -81,7 +81,7 @@ const Project = () => {
   }
 
   return (
-    <section className="bg-gradient-to-r from-orange-500 to-gray-900">
+    <section className="bg-gradient-to-r from-gray-500 to-gray-900 rounded-3xl">
       <div className='p-10 mx-auto'>
         <h2 className="text-3xl font-bold text-white mb-4 sm:text-center">MY RECENT PROJECTS</h2>
         <hr className="border-t border-white mb-6" />

@@ -53,7 +53,7 @@ const Contact = () => {
         />
         <button
             type="submit"
-            className="w-full bg-orange-900 hover:bg-orange-500 text-white font-bold py-2 px-4 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-700 transition ease-in-out duration-500"
+            className="w-full bg-blue-600 hover:bg-gray-500 text-white font-bold py-2 px-4 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-700 transition ease-in-out duration-500"
             disabled={state.submitting}
         >
             Send Message
