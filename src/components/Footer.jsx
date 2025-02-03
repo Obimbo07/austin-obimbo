@@ -36,7 +36,9 @@ const Footer = () => {
             <img
               src="logo-shine.png"
               alt="Logo"
-              className="w-20 h-auto rounded-full mb-4"
+              className="rounded-full mb-4"
+               width={80}
+               height={10}
             />
             <p className="text-gray-800  font-semibold">
               <strong className="text-3xl">Austin Obimbo</strong>
